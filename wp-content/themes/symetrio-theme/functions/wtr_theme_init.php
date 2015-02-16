@@ -87,6 +87,7 @@ if( ! function_exists( 'wtr_scripts_styles' ) ){
 			wp_enqueue_style( 'animation_css', WTR_THEME_URI . '/assets/css/animation_css.css' );
 			wp_enqueue_style( 'font_awesome', WTR_THEME_URI . '/assets/css/font-awesome.min.css' );
 			wp_enqueue_style( 'style_custom' , WTR_THEME_URI . '/style-custom.css');
+			wp_enqueue_style( 'style_teamlink' , WTR_THEME_URI . '/assets/css/app.css');
 			//wp_enqueue_style( 'style_custom' , WTR_THEME_URI . '/style-custom.php');
 
 			wp_enqueue_script('modernizr_custom', WTR_THEME_URI . '/assets/js/modernizr.custom.js', null, WTR_THEME_VERSION, true );
