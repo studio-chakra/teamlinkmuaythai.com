@@ -115,6 +115,32 @@ $wtr_translate['wtr_TranslateBlogSHTComments']						= __( 'Comments', WTR_THEME_
 $wtr_translate['wtr_TranslateEventSHTReadMore']						= __( 'Read more', WTR_THEME_NAME );
 $wtr_translate['wtr_TranslateClassesSHTMinutes']					= __( 'min', WTR_THEME_NAME );
 $wtr_translate['wtr_TranslateClassesSHTKcal']						= __( 'kcal', WTR_THEME_NAME );
+$wtr_translate['wtr_TranslateCountdownSHTYears']					= __( 'Years', WTR_THEME_NAME );
+$wtr_translate['wtr_TranslateCountdownSHTMonths']					= __( 'Months', WTR_THEME_NAME );
+$wtr_translate['wtr_TranslateCountdownSHTWeeks']					= __( 'Weeks', WTR_THEME_NAME );
+$wtr_translate['wtr_TranslateCountdownSHTDays']						= __( 'Days', WTR_THEME_NAME );
+$wtr_translate['wtr_TranslateCountdownSHTHours']					= __( 'Hours', WTR_THEME_NAME );
+$wtr_translate['wtr_TranslateCountdownSHTMinutes']					= __( 'Minutes', WTR_THEME_NAME );
+$wtr_translate['wtr_TranslateCountdownSHTSeconds']					= __( 'Seconds', WTR_THEME_NAME );
+
+
+$wtr_translate['wtr_TranslateClassesScheduleSHTMonday']				= __( 'Monday', WTR_THEME_NAME );
+$wtr_translate['wtr_TranslateClassesScheduleSHTTuesday']			= __( 'Tuesday', WTR_THEME_NAME );
+$wtr_translate['wtr_TranslateClassesScheduleSHTWednesday']			= __( 'Wednesday', WTR_THEME_NAME );
+$wtr_translate['wtr_TranslateClassesScheduleSHTThursday']			= __( 'Thursday', WTR_THEME_NAME );
+$wtr_translate['wtr_TranslateClassesScheduleSHTFriday']				= __( 'Friday', WTR_THEME_NAME );
+$wtr_translate['wtr_TranslateClassesScheduleSHTSaturday']			= __( 'Saturday', WTR_THEME_NAME );
+$wtr_translate['wtr_TranslateClassesScheduleSHTSunday']				= __( 'Sunday', WTR_THEME_NAME );
+$wtr_translate['wtr_TranslateClassesScheduleSHTTimeDay']			= __( 'Time / Day', WTR_THEME_NAME );
+$wtr_translate['wtr_TranslateClassesScheduleSHTSelectClasse']		= __( 'Select classe', WTR_THEME_NAME );
+$wtr_translate['wtr_TranslateClassesScheduleSHTShowAll']			= __( 'Show all', WTR_THEME_NAME );
+$wtr_translate['wtr_TranslateClassesScheduleSHTSorry']				= __( 'Sorry, no results in selected week', WTR_THEME_NAME );
+$wtr_translate['wtr_TranslateClassesScheduleSHTAll']				= __( 'All', WTR_THEME_NAME );
+$wtr_translate['wtr_TranslateClassesScheduleSHTCategories']			= __( 'Categories', WTR_THEME_NAME );
+$wtr_translate['wtr_TranslateClassesScheduleSHTClasses']			= __( 'Classes', WTR_THEME_NAME );
+$wtr_translate['wtr_TranslateClassesScheduleSHTCategory']			= __( 'Category', WTR_THEME_NAME );
+$wtr_translate['wtr_TranslateClassesScheduleSHTClass']				= __( 'Class', WTR_THEME_NAME );
+
 $wtr_translate['wtr_TranslateClassesSHTPassStatus0']				= __( 'Promotion', WTR_THEME_NAME );
 $wtr_translate['wtr_TranslateClassesSHTPassStatus1']				= __( 'New', WTR_THEME_NAME );
 $wtr_translate['wtr_TranslateClassesSHTPassStatus2']				= __( 'Featured', WTR_THEME_NAME );

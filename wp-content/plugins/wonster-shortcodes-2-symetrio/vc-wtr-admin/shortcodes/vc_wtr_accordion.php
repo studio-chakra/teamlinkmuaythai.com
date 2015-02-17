@@ -29,7 +29,7 @@ class VCExtendAddonAccordion extends VCExtendAddonWtr{
 
 		// removing unnecessary VC attributes
 		$this->removeShortcodesParam(
-			array( $this->base => array( 'title', 'collapsible', 'active_tab', 'el_class' ) )
+			array( $this->base => array( 'title', 'collapsible', 'active_tab', 'el_class', 'disable_keyboard' ) )
 		);
 
 		// adding wtr attr

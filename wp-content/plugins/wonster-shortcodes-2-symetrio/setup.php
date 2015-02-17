@@ -4,7 +4,7 @@
 Plugin Name: Wonster Shortcodes for Visual Composer - Symetrio Edition
 Plugin URI:
 Description: Build your perfect site with awesome shortcodes added to Visual Composer. This plugin works only with Symetrio theme created by Wonster team.
-Version: 2.2
+Version: 2.5
 Author: Wonster
 Author URI: http://wonster.co
 */

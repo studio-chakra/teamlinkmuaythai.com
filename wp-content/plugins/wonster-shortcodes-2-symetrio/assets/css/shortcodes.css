@@ -2485,7 +2485,6 @@
 		line-height: 50px;
 		padding: 50px;
 		/* end */
-		cursor: pointer;
 		border-radius: 1000px;
 		position: relative;
 		display: inline-block;
@@ -6940,4 +6939,71 @@
 	.wtrShtFullWidthVimeoSection object,
 	.wtrShtFullWidthVimeoSection video{
 		max-width: none !important;
+	}
+
+
+/* Easy Pricing Tables Lite by Fatcat Apps - optimized for SYmetrio*/
+
+
+	.ptp-price{
+		margin: 0px -1px 0px -1px !important;
+	}
+
+	.ptp-plan{
+		padding: 20px 10px !important;
+	}
+
+	.ptp-item-container{
+		border-width: 1px !important;
+		border-style: solid !important;
+	}
+
+	.ptp-bullet-item{
+		border-bottom-width: 1px !important;
+		border-bottom-style: dashed !important;
+	}
+
+	.ptp-button{
+		border-bottom: 0px !important;
+		-webkit-box-shadow: 0 0px 0 rgba(255, 255, 255, 0.5) inset !important;
+		box-shadow: 0 0px 0 rgba(255, 255, 255, 0.5) inset !important;
+	}
+
+	.ptp-highlight .ptp-plan{
+		margin: -1px -1px 0px -1px !important;
+		border-top: 1px dashed rgba(255,255,255,0.2) !important;
+	}
+
+	.ptp-most-popular{
+		-webkit-border-bottom-right-radius: 0px !important;
+		-webkit-border-bottom-left-radius: 0px !important;
+		-moz-border-radius-bottomright: 0px !important;
+		-moz-border-radius-bottomleft: 0px !important;
+		border-bottom-right-radius: 0px !important;
+		border-bottom-left-radius: 0px !important;
+		text-transform: uppercase !important;
+		margin-bottom: 0px !important;
+		padding: 10px 0px 10px !important;
+		margin: 0px -1px !important;
+		letter-spacing: 0.3em;
+	}
+
+	.ptp-highlight .ptp-plan,
+	.ptp-highlight .ptp-item-container{
+		-webkit-border-top-right-radius: 0px !important;
+		-webkit-border-top-left-radius: 0px !important;
+		-moz-border-radius-topright: 0px !important;
+		-moz-border-radius-topleft: 0px !important;
+		border-top-right-radius: 0px !important;
+		border-top-left-radius: 0px !important;
+	}
+
+	.ptp-highlight .ptp-item-container{
+		border-width: 0px !important;
+	}
+
+	.ptp-highlight .ptp-cta,
+	.ptp-highlight .ptp-bullet-item{
+		border-color: rgba(255,255,255,0.2) !important;
+		margin: 0px -1px !important;
 	}

@@ -38,6 +38,10 @@ if ( ! class_exists( 'WTR_Customize' ) ) {
 
 			add_action( 'customize_controls_enqueue_scripts', array( &$this, 'theme_customize_scripts' ) );
 
+			//update custom css
+			add_action( 'update_option_' . WTR_Settings::get_WP_CURRENT_VERSION(), array( &$this, 'update_custom_css') );
+			add_action( 'add_option_' . WTR_Settings::get_WP_CURRENT_VERSION(), array( &$this, 'update_custom_css') );
+
 		} // end __construct
 
 
@@ -50,6 +54,40 @@ if ( ! class_exists( 'WTR_Customize' ) ) {
 			}
 		} // end init
 
+		public function update_custom_css(){
+
+			$customize		= get_option( WP_CUSTOMIZER_OPT_NAME );
+			$customize_new	= array();
+			$update			= false;
+
+			if( ! empty( $customize) ){
+
+				foreach ( self::$opt_obj as $section ) {
+					foreach ( $section->get('settings') as $setting ) {
+
+						$id_setting	= $setting->get('id_setting');
+						$selector	= $setting->get('css_selector');
+
+						if( ! isset( $customize[ $id_setting ] ) ) {
+							$value	= $setting->get('default');
+							$update = true;
+						} else if( $customize[ $id_setting ]['style'] != $selector ) {
+							$value	= $customize[ $id_setting ]['value'];
+							$update = true;
+						} else {
+							$value	= $customize[ $id_setting ]['value'];
+						}
+
+						$customize_new[ $id_setting ]= array( 'value' => $value, 'style' => $selector );
+					}
+				}
+
+				if( $update OR ( count( $customize ) != count( $customize_new ) AND defined( 'WTR_SHT_PLUGIN_DIR' ) ) ) {
+					update_option( WP_CUSTOMIZER_OPT_NAME, $customize_new );
+				}
+
+			}
+		} // end update_custom_css
 
 		public function theme_customize_scripts() {
 			wp_enqueue_script('wtr-customize-script', WTR_CUSTOMIZER_URI . '/wtr_customizer.js');

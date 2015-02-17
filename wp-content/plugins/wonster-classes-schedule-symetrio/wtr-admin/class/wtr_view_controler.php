@@ -11,16 +11,23 @@ if ( ! class_exists( 'WTR_Cs_view' ) ) {
 
 		//FUNCTION
 		public function __construct(){
-			$this->days_list = array(
-				__( 'Monday', 'wtr_cs_framework' ),
-				__( 'Tuesday', 'wtr_cs_framework' ),
-				__( 'Wednesday', 'wtr_cs_framework' ),
-				__( 'Thursday', 'wtr_cs_framework' ),
-				__( 'Friday', 'wtr_cs_framework' ),
-				__( 'Saturday', 'wtr_cs_framework' ),
-				__( 'Sunday', 'wtr_cs_framework' )
-			);
+			add_action( 'init', array( &$this, 'set_days_list' ) );
 		}//end __construct
+
+		public function set_days_list(){
+
+			global $post_settings;
+
+			$this->days_list = array(
+				$post_settings['wtr_TranslateClassesScheduleSHTMonday'],
+				$post_settings['wtr_TranslateClassesScheduleSHTTuesday'],
+				$post_settings['wtr_TranslateClassesScheduleSHTWednesday'],
+				$post_settings['wtr_TranslateClassesScheduleSHTThursday'],
+				$post_settings['wtr_TranslateClassesScheduleSHTFriday'],
+				$post_settings['wtr_TranslateClassesScheduleSHTSaturday'],
+				$post_settings['wtr_TranslateClassesScheduleSHTSunday'],
+			);
+		} // end set_days_list
 
 
 		private function prepare_calendar_data_to_display( $data ){
@@ -321,6 +328,8 @@ if ( ! class_exists( 'WTR_Cs_view' ) ) {
 
 		public function draw_calendar_in_public( $calendar_data, $style, $id, $modal, $scope, $pdf, $pdf_url, $show_level, $empty_hours ){
 
+			global $post_settings;
+
 			if( 0 == $id ){
 				wp_nonce_field( 'wtr_calendar_public_nonce', 'wtr_calendar_public_nonce' );
 			}
@@ -359,10 +368,10 @@ if ( ! class_exists( 'WTR_Cs_view' ) ) {
 							}
 
 							$result .= '<span class="wtrShtTimeTableBtn wtrRadius3 wtrTimetableFilterDataAll">';
-								$result .= __( 'Show all', 'wtr_cs_framework' );
+								$result .= $post_settings['wtr_TranslateClassesScheduleSHTShowAll'];
 							$result .= '</span>';
 							$result .= '<a href="#modal" data-idx="'. esc_attr( $id ) .'" data-calendar="' . esc_attr( $calendar_data[ 'id_timetable' ] ) . '" data-type="' . esc_attr( $calendar_data[ 'type' ] ) . '" class="wtrShtTimeTableBtn wtrShtTimeTableBtnClasses wtrRadius3 wtrClassFilter">';
-								$result .= '<i class="fa fa-th"></i>' . __( 'Select classes', 'wtr_cs_framework' );
+								$result .= '<i class="fa fa-th"></i>' . $post_settings['wtr_TranslateClassesScheduleSHTSelectClasse'];
 							$result .= '</a>';
 						$result .= '</div>';
 					}
@@ -395,10 +404,12 @@ if ( ! class_exists( 'WTR_Cs_view' ) ) {
 
 		public function draw_calendar_in_public_table( $calendar_data, $modal, $show_level, $empty_hours ){
 
+			global $post_settings;
+
 			$result = '<table class="wtrShtTimeTableItem">';
 				$result .= '<thead>';
 					$result .= '<tr>';
-						$result .= '<th style="width:200px !important;"><span class="wtrShtTimeTableHead">' . __( 'Time / Day', 'wtr_cs_framework' ) . '</span></th>';
+						$result .= '<th style="width:200px !important;"><span class="wtrShtTimeTableHead">' . $post_settings['wtr_TranslateClassesScheduleSHTTimeDay'] . '</span></th>';
 						$result .= '<th><span class="wtrShtTimeTableDay">' . $this->days_list[ 0 ] . '</span></th>';
 						$result .= '<th><span class="wtrShtTimeTableDay">' . $this->days_list[ 1 ] . '</span></th>';
 						$result .= '<th><span class="wtrShtTimeTableDay">' . $this->days_list[ 2 ] . '</span></th>';
@@ -414,7 +425,7 @@ if ( ! class_exists( 'WTR_Cs_view' ) ) {
 				if( !count( $calendar_data[ 'instance_public' ] ) ){
 					$result .= '<tr class="wtrShtTimeTableNoResults">';
 						$result .= '<td colspan="8" >';
-							$result .= '<h3 class="wtrShtTimeTableNoResultsHeadline">' . __( 'Sorry, no results in selected week', 'wtr_cs_framework' ) . '</h3>';
+							$result .= '<h3 class="wtrShtTimeTableNoResultsHeadline">' . $post_settings['wtr_TranslateClassesScheduleSHTSorry']  . '</h3>';
 						$result .= '</td>';
 					$result .= '</tr>';
 				}
@@ -497,7 +508,7 @@ if ( ! class_exists( 'WTR_Cs_view' ) ) {
 													$result .='<div class="wtrShtMobileTimeTableClassTime">';
 														$result .= $this->generate_hours_public( $calendar_data[ 'time_format' ], $data_x[ 'time_hour_start' ][ 'value' ], $data_x[ 'time_minute_start' ][ 'value' ], 'modal' );
 															$result .= ' - ';
-														$result .= $this->generate_hours_public( $calendar_data[ 'time_format' ], $data_x[ 'time_hour_start' ][ 'value' ], $data_x[ 'time_minute_start' ][ 'value' ], 'modal' );
+														$result .= $this->generate_hours_public( $calendar_data[ 'time_format' ], $data_x[ 'time_hour_end' ][ 'value' ], $data_x[ 'time_minute_end' ][ 'value' ], 'modal' );
 													$result .= '</div>';
 												$result .='</a>';
 											$result .='</li>';
@@ -651,13 +662,15 @@ if ( ! class_exists( 'WTR_Cs_view' ) ) {
 
 		public function draw_filter_calendar_classes_public( $id_calendar, $data, $idx ){
 
+			global $post_settings;
+
 			$categoryC = count( $data[ 'category' ] );
 
 			$category_c = '';
 			foreach( $data[ 'category' ] as $id => $name ){
 				$category_c .= '<li class="wtrTimeTableModalListItem wtrTimetableFilterData" data-idx="' . esc_attr( $idx ) . '" data-filter="wtr-cat-' . esc_attr( $id ) . '">';
 					$category_c .= '<div class="wtrTimeTableClassesCategory">' .  $name ;
-					$category_c .= '<span>' . __( 'Category', 'wtr_cs_framework' ) . '</span></div>';
+					$category_c .= '<span>' . $post_settings['wtr_TranslateClassesScheduleSHTCategory'] . '</span></div>';
 				$category_c .= '</li>';
 			}
 
@@ -665,7 +678,7 @@ if ( ! class_exists( 'WTR_Cs_view' ) ) {
 			foreach( $data[ 'classes' ] as $id => $name ){
 				$classes_c .= '<li class="wtrTimeTableModalListItem wtrTimetableFilterData" data-idx="' . esc_attr( $idx ) . '"  data-filter="wtr-class-' . esc_attr( $id ) . '">';
 					$classes_c .= '<div class="wtrTimeTableClasses">' .  $name ;
-					$classes_c .= '<span>' . __( 'Class', 'wtr_cs_framework' ) . '</span></div>';
+					$classes_c .= '<span>' . $post_settings['wtr_TranslateClassesScheduleSHTClass'] . '</span></div>';
 				$classes_c .= '</li>';
 			}
 
@@ -673,15 +686,15 @@ if ( ! class_exists( 'WTR_Cs_view' ) ) {
 			$result = '<div class="wtrTimeTableModalContainer">';
 				$result .= '<div class="wtrTimeTableModalHeader">';
 					$result .= '<span class="wtrTimeTableModalClose close"></span>';
-					$result .= '<h4>Select classes</h4>';
+					$result .= '<h4>' . $post_settings['wtr_TranslateClassesScheduleSHTSelectClasse'] . '</h4>';
 				$result .= '</div>';
 				$result .= '<div class="wtrTimeTableModalTabs clearfix">';
 					$result .= '<ul class="wtrTimeTableModalTabsList resp-tabs-list clearfix">';
-						$result .= '<li class="wtrTimeTableModalTabsListItem">' . __( 'All', 'wtr_cs_framework' ) . '</li>';
+						$result .= '<li class="wtrTimeTableModalTabsListItem">' . $post_settings['wtr_TranslateClassesScheduleSHTShowAll'] . '</li>';
 
 						if( $categoryC ){
-							$result .= '<li class="wtrTimeTableModalTabsListItem">' . __( 'Categories', 'wtr_cs_framework' ) . '</li>';
-							$result .= '<li class="wtrTimeTableModalTabsListItem">' . __( 'Classes', 'wtr_cs_framework' ) . '</li>';
+							$result .= '<li class="wtrTimeTableModalTabsListItem">' . $post_settings['wtr_TranslateClassesScheduleSHTCategories'] . '</li>';
+							$result .= '<li class="wtrTimeTableModalTabsListItem">' . $post_settings['wtr_TranslateClassesScheduleSHTClasses'] . '</li>';
 						}
 
 					$result .= '</ul>';
@@ -762,8 +775,10 @@ if ( ! class_exists( 'WTR_Cs_view' ) ) {
 								$result .= '</div>';
 								$result .= '<div class="wtrClassDetailsModalMetaHeadlineEx">';
 
-									foreach( $data[ 'timetable_info' ][ 'txt_trainers' ] as $id_trainer => $name ){
-										$result .= '<a href="' . get_permalink( intval( $id_trainer ) ) . '">' . $name  . '</a>';
+									if( isset( $data[ 'timetable_info' ][ 'txt_trainers' ] ) ){
+										foreach( $data[ 'timetable_info' ][ 'txt_trainers' ] as $id_trainer => $name ){
+											$result .= '<a href="' . get_permalink( intval( $id_trainer ) ) . '">' . $name  . '</a>';
+										}
 									}
 
 								$result .= '</div>';
@@ -847,27 +862,38 @@ if ( ! class_exists( 'WTR_Cs_view' ) ) {
 
 
 		public function draw_calendar_scope_item( $calendar, $id_scope, $data ){
-			$result = '<tr class="stdRow wtr-data-scope-' . esc_attr( $id_scope ) . ' ">
-				<td class="class"> ' . stripcslashes( $data[ 'txt_id_classes' ][ 'value' ] ) . ' </td>
-				<td class="class">' . $data[ 'start_date' ][ 'value' ] . ' - ' . $data[ 'end_date' ][ 'value' ] . '</td>
-				<td class="class">' .
-					$this->gen_hours_overview( $calendar[ 'time_format' ], $data[ 'time_hour_start' ], $data[ 'time_minute_start' ] )  . ' - ' .
-					$this->gen_hours_overview( $calendar[ 'time_format' ], $data[ 'time_hour_end' ], $data[ 'time_minute_end' ] ) .
-				'</td>
-				<td class="class">' . $data[ 'txt_id_room' ][ 'value' ] . '</td>
-				<td class="class">' . ( ( isset( $data[ 'txt_trainers' ] ) )? $data[ 'txt_trainers' ][ 'value' ] : $data[ 'txt_trainers_tmp' ][ 'value' ] ) . '</td>
-				<td class="class">' . $data[ 'participants' ][ 'value' ] . '</td>
-				<td class="option">
-					<div class="wtrAdminCallSett clearfix">
-						<span data-scope="'. esc_attr( $id_scope ) .'" data-calendar="'. esc_attr( $calendar[ 'id_timetable' ] ) .'" class="wtrAdminCalSettBtn settingBtn wtrEditScope">
-							<i class="fa fa-cog"></i>
-						</span>
-						<span data-scope="'. esc_attr( $id_scope ) .'" class="wtrAdminCalSettBtn deleteBtn wtrDeleteScope">
-							<i class="fa fa-times"></i>
-						</span>
-					</div>
-				</td>
-			</tr>';
+
+			if( isset( $data[ 'txt_id_classes' ][ 'value' ] ) ){
+				if( isset( $data[ 'txt_id_room' ][ 'value' ] ) ){
+					$room_text = $data[ 'txt_id_room' ][ 'value' ];
+				}else{
+					$room_text = '';
+				}
+
+				$result = '<tr class="stdRow wtr-data-scope-' . esc_attr( $id_scope ) . ' ">
+					<td class="class"> ' . stripcslashes( $data[ 'txt_id_classes' ][ 'value' ] ) . ' </td>
+					<td class="class">' . $data[ 'start_date' ][ 'value' ] . ' - ' . $data[ 'end_date' ][ 'value' ] . '</td>
+					<td class="class">' .
+						$this->gen_hours_overview( $calendar[ 'time_format' ], $data[ 'time_hour_start' ], $data[ 'time_minute_start' ] )  . ' - ' .
+						$this->gen_hours_overview( $calendar[ 'time_format' ], $data[ 'time_hour_end' ], $data[ 'time_minute_end' ] ) .
+					'</td>
+					<td class="class">' . $room_text . '</td>
+					<td class="class">' . ( ( isset( $data[ 'txt_trainers' ] ) )? $data[ 'txt_trainers' ][ 'value' ] : $data[ 'txt_trainers_tmp' ][ 'value' ] ) . '</td>
+					<td class="class">' . $data[ 'participants' ][ 'value' ] . '</td>
+					<td class="option">
+						<div class="wtrAdminCallSett clearfix">
+							<span data-scope="'. esc_attr( $id_scope ) .'" data-calendar="'. esc_attr( $calendar[ 'id_timetable' ] ) .'" class="wtrAdminCalSettBtn settingBtn wtrEditScope">
+								<i class="fa fa-cog"></i>
+							</span>
+							<span data-scope="'. esc_attr( $id_scope ) .'" class="wtrAdminCalSettBtn deleteBtn wtrDeleteScope">
+								<i class="fa fa-times"></i>
+							</span>
+						</div>
+					</td>
+				</tr>';
+			}else{
+				$result = '';
+			}
 
 			return $result;
 		}//end draw_calendar_scope_item
@@ -1066,26 +1092,30 @@ if ( ! class_exists( 'WTR_Cs_view' ) ) {
 
 
 		public function draw_calendar_instance_item( $calendar, $id_instance, $instance, $type ){
-			$result = '<tr class="stdRow wtr-data-instance-' . esc_attr( $id_instance ) . ' ">
-				<td class="class"> ' . stripcslashes( $this->check_data_flag( $instance[ 'id_classes' ], $instance[ 'txt_id_classes' ] ) ) . ' </td>
-				<td class="class">' .
-					$this->gen_hours_overview( $calendar[ 'time_format' ], $instance[ 'time_hour_start' ], $instance[ 'time_minute_start' ] )  . ' - ' .
-					$this->gen_hours_overview( $calendar[ 'time_format' ], $instance[ 'time_hour_end' ], $instance[ 'time_minute_end' ] ) .
-				'</td>
-				<td class="class">' . $this->check_data_flag( $instance[ 'id_room' ], $instance[ 'txt_id_room' ] ) . '</td>
-				<td class="class">' . ( ( isset( $instance[ 'txt_trainers' ] ) )? $this->check_data_flag( $instance[ 'trainers' ], $instance[ 'txt_trainers' ] ) : $this->check_data_flag( $instance[ 'trainers' ], $instance[ 'txt_trainers_tmp' ] ) ) . '</td>
-				<td class="class">' . $this->check_data_flag( $instance[ 'participants' ] ) . '</td>
-				<td class="option">
-					<div class="wtrAdminCallSett clearfix">
-						<span data-instance="'. esc_attr( $id_instance ) .'" data-calendar="'. esc_attr( $calendar[ 'id_timetable' ] ) .'" class="wtrAdminCalSettBtn settingBtn wtrEditInstance">
-							<i class="fa fa-cog"></i>
-						</span>
-						<span data-instance="'. esc_attr( $id_instance ) .'" data-type="' . esc_attr( $type ) . '" class="wtrAdminCalSettBtn deleteBtn wtrDeleteInstance">
-							<i class="fa fa-times"></i>
-						</span>
-					</div>
-				</td>
-			</tr>';
+			if( isset( $instance[ 'txt_id_classes' ] ) ){
+				$result = '<tr class="stdRow wtr-data-instance-' . esc_attr( $id_instance ) . ' ">
+					<td class="class"> ' . stripcslashes( $this->check_data_flag( $instance[ 'id_classes' ], $instance[ 'txt_id_classes' ] ) ) . ' </td>
+					<td class="class">' .
+						$this->gen_hours_overview( $calendar[ 'time_format' ], $instance[ 'time_hour_start' ], $instance[ 'time_minute_start' ] )  . ' - ' .
+						$this->gen_hours_overview( $calendar[ 'time_format' ], $instance[ 'time_hour_end' ], $instance[ 'time_minute_end' ] ) .
+					'</td>
+					<td class="class">' . $this->check_data_flag( $instance[ 'id_room' ], $instance[ 'txt_id_room' ] ) . '</td>
+					<td class="class">' . ( ( isset( $instance[ 'txt_trainers' ] ) )? $this->check_data_flag( $instance[ 'trainers' ], $instance[ 'txt_trainers' ] ) : $this->check_data_flag( $instance[ 'trainers' ], $instance[ 'txt_trainers_tmp' ] ) ) . '</td>
+					<td class="class">' . $this->check_data_flag( $instance[ 'participants' ] ) . '</td>
+					<td class="option">
+						<div class="wtrAdminCallSett clearfix">
+							<span data-instance="'. esc_attr( $id_instance ) .'" data-calendar="'. esc_attr( $calendar[ 'id_timetable' ] ) .'" class="wtrAdminCalSettBtn settingBtn wtrEditInstance">
+								<i class="fa fa-cog"></i>
+							</span>
+							<span data-instance="'. esc_attr( $id_instance ) .'" data-type="' . esc_attr( $type ) . '" class="wtrAdminCalSettBtn deleteBtn wtrDeleteInstance">
+								<i class="fa fa-times"></i>
+							</span>
+						</div>
+					</td>
+				</tr>';
+			}else{
+				$result = '';
+			}
 
 			return $result;
 		}//end draw_calendar_instance_item

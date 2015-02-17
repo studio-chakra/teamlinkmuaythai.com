@@ -55,21 +55,19 @@ if ( ! class_exists( 'WTR_Shortcode_Gallery' ) ) {
 				'post_type'				=> 'gallery',
 				'posts_per_page'		=> -1,
 				'ignore_sticky_posts'	=> 1,
+				'fields'				=> 'ids'
 			);
 
 			// The Query
-			$the_query = new WP_Query( $args );
-			$result = array();
+			$posts	= get_posts( $args );
+			$result	= array();
 
-			if ( $the_query->have_posts() ){
-				while ( $the_query->have_posts() ){
-					$the_query->the_post();
-					$nameGallery = get_the_title();
-					$result[ get_the_id()] = ( trim( $nameGallery ) )? $nameGallery : __( 'no title', 'wtr_sht_framework' );
+			if ( ! empty( $posts ) ){
+				foreach ( $posts as $post ) {
+					$nameGallery		= get_the_title( $post );
+					$result[ $post ]	= ( trim( $nameGallery ) )? $nameGallery : __( 'no title', 'wtr_sht_framework' );
 				}
 			}
-			/* Restore original Post Data */
-			wp_reset_postdata();
 
 			if( !count( $result ) ) {
 				$result = array( 'NN' => __( 'There are no galleries to choose from', 'wtr_sht_framework' ) );

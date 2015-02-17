@@ -388,7 +388,7 @@ if( ! function_exists( 'wtr_social_media' ) ){
 				foreach ( $wtr_social_media as $key => $value) {
 					$social_media_link = $post_settings[ $key ];
 					if( ! empty( $social_media_link ) ) {
-						echo '<li> <a class=" wtrAnimate" href="' . esc_url( $social_media_link ) .'"><i class="' . esc_attr( $value['icon'] ) .'"></i></a></li>';
+						echo '<li> <a class=" wtrAnimate" href="' . esc_url( $social_media_link ) .'" target="_blank" ><i class="' . esc_attr( $value['icon'] ) .'"></i></a></li>';
 					}
 				}
 			echo '</ul>';

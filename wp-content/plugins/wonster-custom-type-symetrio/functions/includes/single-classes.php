@@ -83,28 +83,30 @@ get_header(); ?>
 													<?php echo $post_settings['wtr_TranslateClassesTrainer'];?>
 												</div>
 											<?php endif; ?>
-											<?php foreach ( $trainers as $trainer ) : ?>
-												<?php
-													$trainer_name		= get_post_meta( $trainer->ID, '_wtr_trainer_name', true );
-													$trainer_last_name	= get_post_meta( $trainer->ID, '_wtr_trainer_last_name', true ) ;
-													$trainer_full_name	= ( $trainer_last_name OR $trainer_name ) ? $trainer_name . ' ' . $trainer_last_name : get_the_title( $trainer->ID );
+											<ul class="wtrClassesTrainerList">
+												<?php foreach ( $trainers as $trainer ) : ?>
+													<?php
+														$trainer_name		= get_post_meta( $trainer->ID, '_wtr_trainer_name', true );
+														$trainer_last_name	= get_post_meta( $trainer->ID, '_wtr_trainer_last_name', true ) ;
+														$trainer_full_name	= ( $trainer_last_name OR $trainer_name ) ? $trainer_name . ' ' . $trainer_last_name : get_the_title( $trainer->ID );
 
-												?>
-												<div class="wtrClassesTrainerItem clearfix">
-													<?php if( has_post_thumbnail( $trainer->ID ) ) : ?>
-														<?php
-															$trainer_thumbnail_id			= get_post_thumbnail_id( $trainer->ID );
-															$trainer_thumbnail__attributes	= wp_get_attachment_image_src( $trainer_thumbnail_id, 'thumbnail' );
-															$trainer_thumbnail				= $trainer_thumbnail__attributes[0];
-														?>
-														<img src="<?php echo $trainer_thumbnail ?>" class="wtrClassesTrainerPicture wtrRadius100" alt="">
-													<?php endif; ?>
-													<div class="wtrClassesTrainerItemDetails">
-														<div class="wtrClassesTrainerItemName"><?php echo $trainer_full_name; ?></div>
-														<a href="<?php echo esc_url( get_permalink( $trainer->ID ) ); ?>" class="wtrClassesTrainerItemLink"><?php echo $post_settings['wtr_TranslateClassesTrainerReadMore'];?></a>
-													</div>
-												</div>
-											<?php endforeach; ?>
+													?>
+													<li class="wtrClassesTrainerItem clearfix">
+														<?php if( has_post_thumbnail( $trainer->ID ) ) : ?>
+															<?php
+																$trainer_thumbnail_id			= get_post_thumbnail_id( $trainer->ID );
+																$trainer_thumbnail__attributes	= wp_get_attachment_image_src( $trainer_thumbnail_id, 'thumbnail' );
+																$trainer_thumbnail				= $trainer_thumbnail__attributes[0];
+															?>
+															<img src="<?php echo $trainer_thumbnail ?>" class="wtrClassesTrainerPicture wtrRadius100" alt="">
+														<?php endif; ?>
+														<div class="wtrClassesTrainerItemDetails">
+															<div class="wtrClassesTrainerItemName"><?php echo $trainer_full_name; ?></div>
+															<a href="<?php echo esc_url( get_permalink( $trainer->ID ) ); ?>" class="wtrClassesTrainerItemLink"><?php echo $post_settings['wtr_TranslateClassesTrainerReadMore'];?></a>
+														</div>
+													</li>
+												<?php endforeach; ?>
+											</ul>
 										</div>
 									</div>
 									<?php if( $categories ) : ?>

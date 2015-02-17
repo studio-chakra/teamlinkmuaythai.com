@@ -25,8 +25,15 @@ if ( ! class_exists( 'WTR_Theme_Page' ) ) {
 			//mega menu
 			add_action('admin_print_styles-nav-menus.php', array( &$this, 'init_enqueue_admin_mega_menu') );
 
+			//dashboard
+			add_action('admin_print_styles-index.php', array( &$this, 'init_enqueue_admin_dashboard') );
+
 			//options page
 			add_action('admin_menu', array( &$this, 'create_options_page') );
+
+			// Register the new dashboard widget
+			add_action('wp_dashboard_setup', array( &$this, 'add_dashboard_widgets' ) );
+
 		}// end __construct
 
 
@@ -60,6 +67,11 @@ if ( ! class_exists( 'WTR_Theme_Page' ) ) {
 			wp_enqueue_script( 'mega_menu' );
 		}// end init_enqueue_admin_mega_menu
 
+		public function init_enqueue_admin_dashboard(){
+			wp_enqueue_style( 'wtr_dashboard' );
+		}// end init_enqueue_admin_dashboard
+
+
 
 		public function register_admin_scripts(){
 
@@ -71,6 +83,7 @@ if ( ! class_exists( 'WTR_Theme_Page' ) ) {
 			wp_register_style( 'prettyCheckable', WTR_ADMIN_URI . '/panel/js/prettyCheckable/prettyCheckable.css' );
 			wp_register_style( 'prettyCheckable', WTR_ADMIN_URI . '/panel/js/prettyCheckable.css' );
 			wp_register_style( 'mega_menu', WTR_ADMIN_URI . '/panel/js/mega-menu/mega-menu.css' );
+			wp_register_style( 'wtr_dashboard', WTR_ADMIN_URI . '/panel/css/dashboard.css' );
 			wp_register_style( 'pikaday', WTR_ADMIN_URI . '/panel/css/pikaday.css' );
 
 			//==== menu items
@@ -131,6 +144,28 @@ if ( ! class_exists( 'WTR_Theme_Page' ) ) {
 		}// end init_enqueue
 
 
+		public function dashboard_widget_function( $post, $callback_args ) {
+			echo "<span>Let anybody know that our product is awesome! </span></br></br>";
+			echo "It will take you literally a moment, just click the button below and leave us a 5 star rating. </br>We are really appreciate for your support, by leaving the rating you are contributing to the dynamic development of our product.</br></br>";
+			echo '<a href="http://themeforest.net/downloads" target="_blank" class="button button-primary ">Rate Symetrio</a></br></br> ';
+			echo 'or, <a href="http://themeforest.net/item/symetrio-multisport-gym-fitness-theme/9634580/comments" target="_blank">leave us a comment</a>';
+		} // end dashboard_widget_function
+
+
+		public function add_dashboard_widgets() {
+
+			$widget_id		= 'wtrRateUs';
+			$widget_name	= 'Rate our product';
+			$callback		=  array( &$this, 'dashboard_widget_function' );
+			$location		= 'normal';
+			$priority		= 'high';
+			$callback_args	= null;
+			$screen			= get_current_screen();
+			add_meta_box( $widget_id, $widget_name, $callback, $screen, $location, $priority, $callback_args );
+
+		} // end add_dashboard_widgets
+
+
 		public function create_options_page_html(){
 		?>
 			<form method="post" action="options.php" enctype="multipart/form-data" id="wtr_form_settings">
@@ -163,6 +198,9 @@ if ( ! class_exists( 'WTR_Theme_Page' ) ) {
 									</li>
 									<li>
 										<a href="http://wonster.co/get-xml/" target="_blank" class="WonButton head headBtn xml"><?php  _e( 'XML Demo', WTR_THEME_NAME ) ?></a>
+									</li>
+									<li>
+										<a href="http://themeforest.net/downloads" target="_blank" class="WonButton head headBtn rateUs"><?php  _e( 'Rate Symetrio', WTR_THEME_NAME ) ?></a>
 									</li>
 								</ul>
 								<a href="http://wonster.co" target="_blank" class="wonsterLogo floatRight"></a>
@@ -559,7 +597,7 @@ if ( ! class_exists( 'WTR_Theme_Page' ) ) {
 				update_option( $this->settings->get_WP_REWRITE_FLUSH(),  $status_flush );
 			}
 
-			return $new_opt;
+			return base64_encode( serialize( $new_opt ) );
 		}// end wtr_validate_options
 
 

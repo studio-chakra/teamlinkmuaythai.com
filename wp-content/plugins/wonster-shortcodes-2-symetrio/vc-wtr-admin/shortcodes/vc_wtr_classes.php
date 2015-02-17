@@ -30,18 +30,18 @@ class VCExtendAddonClasses extends VCExtendAddonWtr{
 			'post_type'				=> 'trainer',
 			'posts_per_page'		=> -1,
 			'ignore_sticky_posts'	=> 1,
+			'fields'				=> 'ids'
 		);
 
 		// The Query
-		$the_query = new WP_Query( $args );
+		$posts	= get_posts( $args );
 		$result	= array( __( 'Include all', 'wtr_sht_framework' ) => 'wtr_all_items' );
 
-		if ( $the_query->have_posts() ){
-			while ( $the_query->have_posts() ){
-				$the_query->the_post();
+		if ( ! empty( $posts ) ){
+			foreach ( $posts as $post ) {
 
-				$nameTrainer	= get_post_meta( get_the_ID(), '_wtr_trainer_name', true );
-				$surnameTrainer	= get_post_meta( get_the_ID(), '_wtr_trainer_last_name', true );
+				$nameTrainer	= get_post_meta( $post, '_wtr_trainer_name', true );
+				$surnameTrainer	= get_post_meta( $post, '_wtr_trainer_last_name', true );
 
 				if( $nameTrainer || $surnameTrainer ){
 					$index = trim( $nameTrainer . ' ' . $surnameTrainer );
@@ -50,11 +50,9 @@ class VCExtendAddonClasses extends VCExtendAddonWtr{
 					$index = __( 'no title', 'wtr_sht_framework' );
 				}
 
-				$result[ $index ] = get_the_id();
+				$result[ ' ' . $index . ' ' ] = $post;
 			}
 		}
-		/* Restore original Post Data */
-		wp_reset_postdata();
 
 		if( !count( $result ) ) {
 			$result = array( __( 'There is no trainer to choose from', 'wtr_sht_framework' ) => 'NN' );

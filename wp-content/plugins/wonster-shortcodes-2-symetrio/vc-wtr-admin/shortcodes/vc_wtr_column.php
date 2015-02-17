@@ -208,7 +208,7 @@ class VCExtendAddonColumn extends VCExtendAddonWtr{
 		$class_html_attr = $class . ' ' . $class_width . ' ' . $corner . ' wpb_column vc_column_container ' . $el_class;
 
 		$result .= "\n\t" . '<div ' . $this->shtAnimateHTML( $class_html_attr, $atts ) . ' >';
-		$result .= "\n\t\t" . '<div ' . $style . ' class="wpb_wrapper'. esc_attr( $css ) . esc_attr( $offset ) . '">';
+		$result .= "\n\t\t" . '<div ' . $style . ' class="wpb_wrapper '. esc_attr( $css ) . ' ' . esc_attr( $offset ) . '">';
 		$result .= "\n\t\t\t" . $content;
 		$result .= "\n\t\t" . '</div> ';
 		$result .= "\n\t" . '</div> ';

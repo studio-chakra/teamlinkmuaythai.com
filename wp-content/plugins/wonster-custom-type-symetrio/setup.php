@@ -4,7 +4,7 @@
 Plugin Name: WonsterCustom type - Symetrio Edition
 Plugin URI:
 Description:
-Version: 2.1
+Version: 2.2
 Author: Wonster
 Author URI: http://wonster.co
 */

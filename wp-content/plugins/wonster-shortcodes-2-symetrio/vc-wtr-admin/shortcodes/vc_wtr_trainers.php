@@ -229,6 +229,7 @@ class VCExtendAddonTrainers extends VCExtendAddonWtr{
 			'orderby'			=> $query_orderby,
 			'order'				=> $query_order,
 			'tax_query' 		=> $tax_query,
+			'meta_query'		=> $meta_query,
 			'meta_key'			=> $meta_key
 		);
 

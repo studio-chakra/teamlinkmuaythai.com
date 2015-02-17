@@ -117,7 +117,7 @@ class VCExtendAddonInstagramGallery extends VCExtendAddonWtr{
 				$result	.= '<div class="wtrShtInstagramGalleryItem">';
 					$result	.= '<div class="wtrShtInstagramGalleryItemPicHolder">';
 						$result	.= '<div class="wtrShtInstagramGalleryItemOverlay wtrShtInstagramGalleryAnim">';
-							$result	.= '<a href="' . $images[ $i ][ 'url' ] . '" class="wtrShtInstagramGalleryItemLink wtrShtInstagramGalleryAnim">';
+							$result	.= '<a target="_blank" href="' . $images[ $i ][ 'url' ] . '" class="wtrShtInstagramGalleryItemLink wtrShtInstagramGalleryAnim">';
 								$result	.= '<i class="fa fa-share wtrShtInstagramGalleryAnim"></i>';
 							$result	.= '</a>';
 							$result	.= '<span class="wtrShtInstagramGalleryItemLikes wtrShtInstagramGalleryAnimSec">';

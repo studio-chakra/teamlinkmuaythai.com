@@ -1545,7 +1545,7 @@ $wtr_FontsFont_1 = new WTR_Select( array(
 			__( 'all fonts', 'wtr_framework' )		=> $fonts_all
 		),
 		'css'			=> array(
-			'selector'	=> 'h1, h2, h3, h4, h5, h6, .wrtAltFontCharacter, .wtrHeadlineElement, .wtrCommentList .comment cite.fn, .wtrCommentList .comment cite.fn a',
+			'selector'	=> 'h1, h2, h3, h4, h5, h6, .wrtAltFontCharacter, .wtrHeadlineElement, .wtrCommentList .comment cite.fn, .wtrCommentList .comment cite.fn a,.ptp-price',
 			'style'		=> 'font-family'
 			)
 	)
@@ -1567,7 +1567,7 @@ $wtr_FontsFont_2 = new WTR_Select( array(
 			__( 'all fonts', 'wtr_framework' )		=> $fonts_all
 		),
 		'css'			=> array(
-			'selector'	=> 'blockquote, .wrtSecAltFontCharacter',
+			'selector'	=> 'blockquote, .wrtSecAltFontCharacter,.ptp-most-popular',
 			'style'		=> 'font-family'
 			)
 	)
@@ -2648,6 +2648,18 @@ $wtr_TranslateBlogSHTComments = new WTR_Text( array(
 	)
 );
 
+$wtr_TranslateClassesSHTKcal = new WTR_Text( array(
+		'id'			=> 'wtr_TranslateClassesSHTKcal',
+		'class'			=> '',
+		'title'			=> __( 'Kcal burned', 'wtr_framework' ),
+		'desc' 			=> __( 'Shortcode Classes', 'wtr_framework' ),
+		'value'			=> '',
+		'default_value' => $wtr_translate[ 'wtr_TranslateClassesSHTKcal' ],
+		'info'			=> '',
+		'allow'			=> 'all',
+	)
+);
+
 $wtr_TranslateClassesSHTMinutes = new WTR_Text( array(
 		'id'			=> 'wtr_TranslateClassesSHTMinutes',
 		'class'			=> '',
@@ -2660,13 +2672,277 @@ $wtr_TranslateClassesSHTMinutes = new WTR_Text( array(
 	)
 );
 
-$wtr_TranslateClassesSHTKcal = new WTR_Text( array(
-		'id'			=> 'wtr_TranslateClassesSHTKcal',
+$wtr_TranslateCountdownSHTYears = new WTR_Text( array(
+		'id'			=> 'wtr_TranslateCountdownSHTYears',
 		'class'			=> '',
-		'title'			=> __( 'Kcal burned', 'wtr_framework' ),
-		'desc' 			=> __( 'Shortcode Classes', 'wtr_framework' ),
+		'title'			=> __( 'Years', 'wtr_framework' ),
+		'desc' 			=> __( 'Shortcode Countdown', 'wtr_framework' ),
 		'value'			=> '',
-		'default_value' => $wtr_translate[ 'wtr_TranslateClassesSHTKcal' ],
+		'default_value' => $wtr_translate[ 'wtr_TranslateCountdownSHTYears' ],
+		'info'			=> '',
+		'allow'			=> 'all',
+	)
+);
+
+$wtr_TranslateCountdownSHTMonths = new WTR_Text( array(
+		'id'			=> 'wtr_TranslateCountdownSHTMonths',
+		'class'			=> '',
+		'title'			=> __( 'Months', 'wtr_framework' ),
+		'desc' 			=> __( 'Shortcode Countdown', 'wtr_framework' ),
+		'value'			=> '',
+		'default_value' => $wtr_translate[ 'wtr_TranslateCountdownSHTMonths' ],
+		'info'			=> '',
+		'allow'			=> 'all',
+	)
+);
+
+$wtr_TranslateCountdownSHTWeeks = new WTR_Text( array(
+		'id'			=> 'wtr_TranslateCountdownSHTWeeks',
+		'class'			=> '',
+		'title'			=> __( 'Weeks', 'wtr_framework' ),
+		'desc' 			=> __( 'Shortcode Countdown', 'wtr_framework' ),
+		'value'			=> '',
+		'default_value' => $wtr_translate[ 'wtr_TranslateCountdownSHTWeeks' ],
+		'info'			=> '',
+		'allow'			=> 'all',
+	)
+);
+
+$wtr_TranslateCountdownSHTDays = new WTR_Text( array(
+		'id'			=> 'wtr_TranslateCountdownSHTDays',
+		'class'			=> '',
+		'title'			=> __( 'Days', 'wtr_framework' ),
+		'desc' 			=> __( 'Shortcode Countdown', 'wtr_framework' ),
+		'value'			=> '',
+		'default_value' => $wtr_translate[ 'wtr_TranslateCountdownSHTDays' ],
+		'info'			=> '',
+		'allow'			=> 'all',
+	)
+);
+
+$wtr_TranslateCountdownSHTHours = new WTR_Text( array(
+		'id'			=> 'wtr_TranslateCountdownSHTHours',
+		'class'			=> '',
+		'title'			=> __( 'Hours', 'wtr_framework' ),
+		'desc' 			=> __( 'Shortcode Countdown', 'wtr_framework' ),
+		'value'			=> '',
+		'default_value' => $wtr_translate[ 'wtr_TranslateCountdownSHTHours' ],
+		'info'			=> '',
+		'allow'			=> 'all',
+	)
+);
+
+$wtr_TranslateCountdownSHTMinutes = new WTR_Text( array(
+		'id'			=> 'wtr_TranslateCountdownSHTMinutes',
+		'class'			=> '',
+		'title'			=> __( 'Minutes', 'wtr_framework' ),
+		'desc' 			=> __( 'Shortcode Countdown', 'wtr_framework' ),
+		'value'			=> '',
+		'default_value' => $wtr_translate[ 'wtr_TranslateCountdownSHTMinutes' ],
+		'info'			=> '',
+		'allow'			=> 'all',
+	)
+);
+
+$wtr_TranslateCountdownSHTSeconds = new WTR_Text( array(
+		'id'			=> 'wtr_TranslateCountdownSHTSeconds',
+		'class'			=> '',
+		'title'			=> __( 'Seconds', 'wtr_framework' ),
+		'desc' 			=> __( 'Shortcode Countdown', 'wtr_framework' ),
+		'value'			=> '',
+		'default_value' => $wtr_translate[ 'wtr_TranslateCountdownSHTSeconds' ],
+		'info'			=> '',
+		'allow'			=> 'all',
+	)
+);
+
+$wtr_TranslateClassesScheduleSHTMonday = new WTR_Text( array(
+		'id'			=> 'wtr_TranslateClassesScheduleSHTMonday',
+		'class'			=> '',
+		'title'			=> __( 'Monday', 'wtr_framework' ),
+		'desc' 			=> __( 'Shortcode Classes schedule', 'wtr_framework' ),
+		'value'			=> '',
+		'default_value' => $wtr_translate[ 'wtr_TranslateClassesScheduleSHTMonday' ],
+		'info'			=> '',
+		'allow'			=> 'all',
+	)
+);
+
+$wtr_TranslateClassesScheduleSHTTuesday = new WTR_Text( array(
+		'id'			=> 'wtr_TranslateClassesScheduleSHTTuesday',
+		'class'			=> '',
+		'title'			=> __( 'Tuesday', 'wtr_framework' ),
+		'desc' 			=> __( 'Shortcode Classes schedule', 'wtr_framework' ),
+		'value'			=> '',
+		'default_value' => $wtr_translate[ 'wtr_TranslateClassesScheduleSHTTuesday' ],
+		'info'			=> '',
+		'allow'			=> 'all',
+	)
+);
+
+$wtr_TranslateClassesScheduleSHTWednesday = new WTR_Text( array(
+		'id'			=> 'wtr_TranslateClassesScheduleSHTWednesday',
+		'class'			=> '',
+		'title'			=> __( 'Wednesday', 'wtr_framework' ),
+		'desc' 			=> __( 'Shortcode Classes schedule', 'wtr_framework' ),
+		'value'			=> '',
+		'default_value' => $wtr_translate[ 'wtr_TranslateClassesScheduleSHTWednesday' ],
+		'info'			=> '',
+		'allow'			=> 'all',
+	)
+);
+
+$wtr_TranslateClassesScheduleSHTThursday = new WTR_Text( array(
+		'id'			=> 'wtr_TranslateClassesScheduleSHTThursday',
+		'class'			=> '',
+		'title'			=> __( 'Thursday', 'wtr_framework' ),
+		'desc' 			=> __( 'Shortcode Classes schedule', 'wtr_framework' ),
+		'value'			=> '',
+		'default_value' => $wtr_translate[ 'wtr_TranslateClassesScheduleSHTThursday' ],
+		'info'			=> '',
+		'allow'			=> 'all',
+	)
+);
+
+$wtr_TranslateClassesScheduleSHTFriday = new WTR_Text( array(
+		'id'			=> 'wtr_TranslateClassesScheduleSHTFriday',
+		'class'			=> '',
+		'title'			=> __( 'Friday', 'wtr_framework' ),
+		'desc' 			=> __( 'Shortcode Classes schedule', 'wtr_framework' ),
+		'value'			=> '',
+		'default_value' => $wtr_translate[ 'wtr_TranslateClassesScheduleSHTFriday' ],
+		'info'			=> '',
+		'allow'			=> 'all',
+	)
+);
+
+$wtr_TranslateClassesScheduleSHTSaturday = new WTR_Text( array(
+		'id'			=> 'wtr_TranslateClassesScheduleSHTSaturday',
+		'class'			=> '',
+		'title'			=> __( 'Saturday', 'wtr_framework' ),
+		'desc' 			=> __( 'Shortcode Classes schedule', 'wtr_framework' ),
+		'value'			=> '',
+		'default_value' => $wtr_translate[ 'wtr_TranslateClassesScheduleSHTSaturday' ],
+		'info'			=> '',
+		'allow'			=> 'all',
+	)
+);
+
+$wtr_TranslateClassesScheduleSHTSunday = new WTR_Text( array(
+		'id'			=> 'wtr_TranslateClassesScheduleSHTSunday',
+		'class'			=> '',
+		'title'			=> __( 'Sunday', 'wtr_framework' ),
+		'desc' 			=> __( 'Shortcode Classes schedule', 'wtr_framework' ),
+		'value'			=> '',
+		'default_value' => $wtr_translate[ 'wtr_TranslateClassesScheduleSHTSunday' ],
+		'info'			=> '',
+		'allow'			=> 'all',
+	)
+);
+
+$wtr_TranslateClassesScheduleSHTTimeDay = new WTR_Text( array(
+		'id'			=> 'wtr_TranslateClassesScheduleSHTTimeDay',
+		'class'			=> '',
+		'title'			=> __( 'Time / Day', 'wtr_framework' ),
+		'desc' 			=> __( 'Shortcode Classes schedule', 'wtr_framework' ),
+		'value'			=> '',
+		'default_value' => $wtr_translate[ 'wtr_TranslateClassesScheduleSHTTimeDay' ],
+		'info'			=> '',
+		'allow'			=> 'all',
+	)
+);
+
+$wtr_TranslateClassesScheduleSHTSelectClasse = new WTR_Text( array(
+		'id'			=> 'wtr_TranslateClassesScheduleSHTSelectClasse',
+		'class'			=> '',
+		'title'			=> __( 'Select classe', 'wtr_framework' ),
+		'desc' 			=> __( 'Shortcode Classes schedule', 'wtr_framework' ),
+		'value'			=> '',
+		'default_value' => $wtr_translate[ 'wtr_TranslateClassesScheduleSHTSelectClasse' ],
+		'info'			=> '',
+		'allow'			=> 'all',
+	)
+);
+
+$wtr_TranslateClassesScheduleSHTShowAll = new WTR_Text( array(
+		'id'			=> 'wtr_TranslateClassesScheduleSHTShowAll',
+		'class'			=> '',
+		'title'			=> __( 'Show all', 'wtr_framework' ),
+		'desc' 			=> __( 'Shortcode Classes schedule', 'wtr_framework' ),
+		'value'			=> '',
+		'default_value' => $wtr_translate[ 'wtr_TranslateClassesScheduleSHTShowAll' ],
+		'info'			=> '',
+		'allow'			=> 'all',
+	)
+);
+
+$wtr_TranslateClassesScheduleSHTSorry = new WTR_Text( array(
+		'id'			=> 'wtr_TranslateClassesScheduleSHTSorry',
+		'class'			=> '',
+		'title'			=> __( 'No results in selected week', 'wtr_framework' ),
+		'desc' 			=> __( 'Shortcode Classes schedule', 'wtr_framework' ),
+		'value'			=> '',
+		'default_value' => $wtr_translate[ 'wtr_TranslateClassesScheduleSHTSorry' ],
+		'info'			=> '',
+		'allow'			=> 'all',
+	)
+);
+
+$wtr_TranslateClassesScheduleSHTAll = new WTR_Text( array(
+		'id'			=> 'wtr_TranslateClassesScheduleSHTAll',
+		'class'			=> '',
+		'title'			=> __( 'All', 'wtr_framework' ),
+		'desc' 			=> __( 'Shortcode Classes schedule', 'wtr_framework' ),
+		'value'			=> '',
+		'default_value' => $wtr_translate[ 'wtr_TranslateClassesScheduleSHTAll' ],
+		'info'			=> '',
+		'allow'			=> 'all',
+	)
+);
+
+$wtr_TranslateClassesScheduleSHTCategories = new WTR_Text( array(
+		'id'			=> 'wtr_TranslateClassesScheduleSHTCategories',
+		'class'			=> '',
+		'title'			=> __( 'Categories', 'wtr_framework' ),
+		'desc' 			=> __( 'Shortcode Classes schedule', 'wtr_framework' ),
+		'value'			=> '',
+		'default_value' => $wtr_translate[ 'wtr_TranslateClassesScheduleSHTCategories' ],
+		'info'			=> '',
+		'allow'			=> 'all',
+	)
+);
+
+$wtr_TranslateClassesScheduleSHTClasses = new WTR_Text( array(
+		'id'			=> 'wtr_TranslateClassesScheduleSHTClasses',
+		'class'			=> '',
+		'title'			=> __( 'Classes', 'wtr_framework' ),
+		'desc' 			=> __( 'Shortcode Classes schedule', 'wtr_framework' ),
+		'value'			=> '',
+		'default_value' => $wtr_translate[ 'wtr_TranslateClassesScheduleSHTClasses' ],
+		'info'			=> '',
+		'allow'			=> 'all',
+	)
+);
+
+$wtr_TranslateClassesScheduleSHTCategory = new WTR_Text( array(
+		'id'			=> 'wtr_TranslateClassesScheduleSHTCategory',
+		'class'			=> '',
+		'title'			=> __( 'Category', 'wtr_framework' ),
+		'desc' 			=> __( 'Shortcode Classes schedule', 'wtr_framework' ),
+		'value'			=> '',
+		'default_value' => $wtr_translate[ 'wtr_TranslateClassesScheduleSHTCategory' ],
+		'info'			=> '',
+		'allow'			=> 'all',
+	)
+);
+
+$wtr_TranslateClassesScheduleSHTClass = new WTR_Text( array(
+		'id'			=> 'wtr_TranslateClassesScheduleSHTClass',
+		'class'			=> '',
+		'title'			=> __( 'Class', 'wtr_framework' ),
+		'desc' 			=> __( 'Shortcode Classes schedule', 'wtr_framework' ),
+		'value'			=> '',
+		'default_value' => $wtr_translate[ 'wtr_TranslateClassesScheduleSHTClass' ],
 		'info'			=> '',
 		'allow'			=> 'all',
 	)
@@ -3231,9 +3507,32 @@ $wtr_TranslateShortcodeSection = new WTR_Section( array(
 			$wtr_TranslateEventSHTReadMore,
 			$wtr_TranslateClassesSHTMinutes,
 			$wtr_TranslateClassesSHTKcal,
+			$wtr_TranslateCountdownSHTYears,
+			$wtr_TranslateCountdownSHTMonths,
+			$wtr_TranslateCountdownSHTWeeks,
+			$wtr_TranslateCountdownSHTDays,
+			$wtr_TranslateCountdownSHTHours,
+			$wtr_TranslateCountdownSHTMinutes,
+			$wtr_TranslateCountdownSHTSeconds,
 			$wtr_TranslateClassesSHTPassStatus2,
 			$wtr_TranslateClassesSHTPassStatus1,
 			$wtr_TranslateClassesSHTPassStatus0,
+			$wtr_TranslateClassesScheduleSHTMonday,
+			$wtr_TranslateClassesScheduleSHTTuesday,
+			$wtr_TranslateClassesScheduleSHTWednesday,
+			$wtr_TranslateClassesScheduleSHTThursday,
+			$wtr_TranslateClassesScheduleSHTFriday,
+			$wtr_TranslateClassesScheduleSHTSaturday,
+			$wtr_TranslateClassesScheduleSHTSunday,
+			$wtr_TranslateClassesScheduleSHTTimeDay,
+			$wtr_TranslateClassesScheduleSHTSelectClasse,
+			$wtr_TranslateClassesScheduleSHTShowAll,
+			$wtr_TranslateClassesScheduleSHTSorry,
+			$wtr_TranslateClassesScheduleSHTAll,
+			$wtr_TranslateClassesScheduleSHTCategories,
+			$wtr_TranslateClassesScheduleSHTClasses,
+			$wtr_TranslateClassesScheduleSHTCategory,
+			$wtr_TranslateClassesScheduleSHTClass,
 			$wtr_TranslateClassesSHTPassPrice,
 			$wtr_TranslateClassesSHTSBSStep,
 			$wtr_TranslateDailyScheduleSHTText,

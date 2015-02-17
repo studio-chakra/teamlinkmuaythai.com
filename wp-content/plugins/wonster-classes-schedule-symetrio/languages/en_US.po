@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Symetrio\n"
-"POT-Creation-Date: 2015-01-13 10:39+0100\n"
-"PO-Revision-Date: 2015-01-13 10:39+0100\n"
+"POT-Creation-Date: 2015-01-26 18:42+0100\n"
+"PO-Revision-Date: 2015-01-26 18:43+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -16,7 +16,7 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;_n;_n_noop\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../wtr-admin/class/wtr_db_controler.php:301
+#: ../wtr-admin/class/wtr_db_controler.php:303
 #: ../wtr-admin/class/wtr_db_controler.php:341
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_schedule.php:75
 #: ../wtr-admin/class/wtr_modal/view/wtr_modal_backbone.php:182
@@ -24,7 +24,7 @@ msgid "no title"
 msgstr ""
 
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_instance.php:58
-#: ../wtr-admin/class/wtr_view_controler.php:89
+#: ../wtr-admin/class/wtr_view_controler.php:96
 msgid "Instance"
 msgstr ""
 
@@ -43,9 +43,8 @@ msgstr ""
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_instance.php:95
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_instance.php:307
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_scope.php:149
-#: ../wtr-admin/class/wtr_view_controler.php:668
-#: ../wtr-admin/class/wtr_view_controler.php:890
-#: ../wtr-admin/class/wtr_view_controler.php:899
+#: ../wtr-admin/class/wtr_view_controler.php:916
+#: ../wtr-admin/class/wtr_view_controler.php:925
 msgid "Class"
 msgstr ""
 
@@ -88,26 +87,26 @@ msgstr ""
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_instance.php:170
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_instance.php:382
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_scope.php:224
-#: ../wtr-admin/class/wtr_view_controler.php:773
-#: ../wtr-admin/class/wtr_view_controler.php:893
-#: ../wtr-admin/class/wtr_view_controler.php:901
+#: ../wtr-admin/class/wtr_view_controler.php:788
+#: ../wtr-admin/class/wtr_view_controler.php:919
+#: ../wtr-admin/class/wtr_view_controler.php:927
 msgid "Room"
 msgstr ""
 
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_instance.php:185
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_instance.php:397
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_scope.php:239
-#: ../wtr-admin/class/wtr_view_controler.php:761
-#: ../wtr-admin/class/wtr_view_controler.php:894
-#: ../wtr-admin/class/wtr_view_controler.php:902
+#: ../wtr-admin/class/wtr_view_controler.php:774
+#: ../wtr-admin/class/wtr_view_controler.php:920
+#: ../wtr-admin/class/wtr_view_controler.php:928
 msgid "Trainers"
 msgstr ""
 
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_instance.php:202
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_instance.php:414
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_scope.php:256
-#: ../wtr-admin/class/wtr_view_controler.php:895
-#: ../wtr-admin/class/wtr_view_controler.php:903
+#: ../wtr-admin/class/wtr_view_controler.php:921
+#: ../wtr-admin/class/wtr_view_controler.php:929
 msgid "Participants"
 msgstr ""
 
@@ -130,49 +129,42 @@ msgstr ""
 
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_instance.php:293
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_scope.php:135
-#: ../wtr-admin/class/wtr_view_controler.php:15
 #: ../wtr-admin/wtr_controler.php:140
 msgid "Monday"
 msgstr ""
 
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_instance.php:294
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_scope.php:136
-#: ../wtr-admin/class/wtr_view_controler.php:16
 #: ../wtr-admin/wtr_controler.php:141
 msgid "Tuesday"
 msgstr ""
 
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_instance.php:295
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_scope.php:137
-#: ../wtr-admin/class/wtr_view_controler.php:17
 #: ../wtr-admin/wtr_controler.php:142
 msgid "Wednesday"
 msgstr ""
 
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_instance.php:296
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_scope.php:138
-#: ../wtr-admin/class/wtr_view_controler.php:18
 #: ../wtr-admin/wtr_controler.php:143
 msgid "Thursday"
 msgstr ""
 
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_instance.php:297
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_scope.php:139
-#: ../wtr-admin/class/wtr_view_controler.php:19
 #: ../wtr-admin/wtr_controler.php:144
 msgid "Friday"
 msgstr ""
 
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_instance.php:298
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_scope.php:140
-#: ../wtr-admin/class/wtr_view_controler.php:20
 #: ../wtr-admin/wtr_controler.php:145
 msgid "Saturday"
 msgstr ""
 
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_instance.php:299
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_scope.php:141
-#: ../wtr-admin/class/wtr_view_controler.php:21
 #: ../wtr-admin/wtr_controler.php:146
 msgid "Sunday"
 msgstr ""
@@ -197,37 +189,37 @@ msgid "Calendar name"
 msgstr ""
 
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_schedule.php:113
-#: ../wtr-admin/class/wtr_view_controler.php:126
+#: ../wtr-admin/class/wtr_view_controler.php:133
 msgid "Time format"
 msgstr ""
 
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_schedule.php:121
-#: ../wtr-admin/class/wtr_view_controler.php:42
+#: ../wtr-admin/class/wtr_view_controler.php:49
 msgid "24 H"
 msgstr ""
 
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_schedule.php:122
-#: ../wtr-admin/class/wtr_view_controler.php:41
+#: ../wtr-admin/class/wtr_view_controler.php:48
 msgid "12 AM / PM"
 msgstr ""
 
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_schedule.php:130
-#: ../wtr-admin/class/wtr_view_controler.php:127
+#: ../wtr-admin/class/wtr_view_controler.php:134
 msgid "Type"
 msgstr ""
 
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_schedule.php:138
-#: ../wtr-admin/class/wtr_view_controler.php:46
+#: ../wtr-admin/class/wtr_view_controler.php:53
 msgid "Static"
 msgstr ""
 
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_schedule.php:139
-#: ../wtr-admin/class/wtr_view_controler.php:47
+#: ../wtr-admin/class/wtr_view_controler.php:54
 msgid "Multi week"
 msgstr ""
 
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_schedule.php:147
-#: ../wtr-admin/class/wtr_view_controler.php:128
+#: ../wtr-admin/class/wtr_view_controler.php:135
 msgid "Show event"
 msgstr ""
 
@@ -244,7 +236,7 @@ msgid "Select the location which from we display events"
 msgstr ""
 
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_scope.php:48
-#: ../wtr-admin/class/wtr_view_controler.php:71
+#: ../wtr-admin/class/wtr_view_controler.php:78
 msgid "Scope"
 msgstr ""
 
@@ -259,14 +251,14 @@ msgid ""
 msgstr ""
 
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_scope.php:75
-#: ../wtr-admin/class/wtr_view_controler.php:37
-#: ../wtr-admin/class/wtr_view_controler.php:1259
+#: ../wtr-admin/class/wtr_view_controler.php:44
+#: ../wtr-admin/class/wtr_view_controler.php:1289
 msgid "NO"
 msgstr ""
 
 #: ../wtr-admin/class/wtr_modal/view/wtr_calendar_scope.php:76
-#: ../wtr-admin/class/wtr_view_controler.php:35
-#: ../wtr-admin/class/wtr_view_controler.php:1260
+#: ../wtr-admin/class/wtr_view_controler.php:42
+#: ../wtr-admin/class/wtr_view_controler.php:1290
 msgid "YES"
 msgstr ""
 
@@ -291,184 +283,155 @@ msgstr ""
 msgid "Save changes"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:114
+#: ../wtr-admin/class/wtr_view_controler.php:121
 #: ../wtr-admin/wtr_controler.php:275
 msgid "Classes schedule"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:115
+#: ../wtr-admin/class/wtr_view_controler.php:122
 msgid "Add classes schedule"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:125
+#: ../wtr-admin/class/wtr_view_controler.php:132
 msgid "Name"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:129
+#: ../wtr-admin/class/wtr_view_controler.php:136
 msgid "Action"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:130
-#: ../wtr-admin/class/wtr_view_controler.php:920
+#: ../wtr-admin/class/wtr_view_controler.php:137
+#: ../wtr-admin/class/wtr_view_controler.php:946
 #: ../wtr-admin/wtr_controler.php:301
 msgid "Settings"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:148
-#: ../wtr-admin/class/wtr_view_controler.php:944
+#: ../wtr-admin/class/wtr_view_controler.php:155
+#: ../wtr-admin/class/wtr_view_controler.php:970
 msgid "Nothing here :("
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:302
+#: ../wtr-admin/class/wtr_view_controler.php:309
 msgid "EVENT"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:357
+#: ../wtr-admin/class/wtr_view_controler.php:366
 msgid "PDF"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:362
-msgid "Show all"
-msgstr ""
-
-#: ../wtr-admin/class/wtr_view_controler.php:365
-msgid "Select classes"
-msgstr ""
-
-#: ../wtr-admin/class/wtr_view_controler.php:401
-msgid "Time / Day"
-msgstr ""
-
-#: ../wtr-admin/class/wtr_view_controler.php:417
-#: ../wtr-admin/class/wtr_view_controler.php:526
-msgid "Sorry, no results in selected week"
-msgstr ""
-
-#: ../wtr-admin/class/wtr_view_controler.php:508
-#: ../wtr-admin/class/wtr_view_controler.php:622
+#: ../wtr-admin/class/wtr_view_controler.php:519
+#: ../wtr-admin/class/wtr_view_controler.php:633
 msgid "Event"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:634
+#: ../wtr-admin/class/wtr_view_controler.php:537
+msgid "Sorry, no results in selected week"
+msgstr ""
+
+#: ../wtr-admin/class/wtr_view_controler.php:645
 msgid "No results for today"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:646
+#: ../wtr-admin/class/wtr_view_controler.php:657
 msgid ""
 "<strong>Wonster Classes Schedule - Symetrio Edition:</strong> There is no "
 "such data to generate this shortcode"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:660
-msgid "Category"
-msgstr ""
-
-#: ../wtr-admin/class/wtr_view_controler.php:680
-msgid "All"
-msgstr ""
-
-#: ../wtr-admin/class/wtr_view_controler.php:683
-msgid "Categories"
-msgstr ""
-
-#: ../wtr-admin/class/wtr_view_controler.php:684
-msgid "Classes"
-msgstr ""
-
-#: ../wtr-admin/class/wtr_view_controler.php:745
+#: ../wtr-admin/class/wtr_view_controler.php:758
 msgid "Skill"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:755
+#: ../wtr-admin/class/wtr_view_controler.php:768
 msgid "Time"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:757
+#: ../wtr-admin/class/wtr_view_controler.php:770
 msgid "min"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:781
+#: ../wtr-admin/class/wtr_view_controler.php:796
 msgid "Limit"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:790
+#: ../wtr-admin/class/wtr_view_controler.php:805
 msgid "Additional text"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:799
+#: ../wtr-admin/class/wtr_view_controler.php:814
 msgid "Read more"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:844
+#: ../wtr-admin/class/wtr_view_controler.php:859
 msgid "Show data"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:891
+#: ../wtr-admin/class/wtr_view_controler.php:917
 msgid "From - To"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:892
-#: ../wtr-admin/class/wtr_view_controler.php:900
+#: ../wtr-admin/class/wtr_view_controler.php:918
+#: ../wtr-admin/class/wtr_view_controler.php:926
 msgid "Time period"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:955
+#: ../wtr-admin/class/wtr_view_controler.php:981
 #: ../wtr-admin/wtr_controler.php:159
 msgid "Calendar scope"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:956
+#: ../wtr-admin/class/wtr_view_controler.php:982
 msgid "Add scope"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:957
+#: ../wtr-admin/class/wtr_view_controler.php:983
 msgid "Calendar Instance"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:958
-#: ../wtr-admin/class/wtr_view_controler.php:1122
+#: ../wtr-admin/class/wtr_view_controler.php:984
+#: ../wtr-admin/class/wtr_view_controler.php:1152
 msgid "Back to list of calendars"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:1030
+#: ../wtr-admin/class/wtr_view_controler.php:1056
 msgid "Data loading"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:1031
+#: ../wtr-admin/class/wtr_view_controler.php:1057
 msgid "please wait"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:1109
+#: ../wtr-admin/class/wtr_view_controler.php:1139
 #: ../wtr-admin/wtr_controler.php:181
 msgid "Calendar instance"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:1112
+#: ../wtr-admin/class/wtr_view_controler.php:1142
 msgid "Add instance"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:1119
+#: ../wtr-admin/class/wtr_view_controler.php:1149
 msgid "Calendar Scope"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:1225
+#: ../wtr-admin/class/wtr_view_controler.php:1255
 msgid "Schedule settings"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:1231
+#: ../wtr-admin/class/wtr_view_controler.php:1261
 msgid "Basic"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:1237
+#: ../wtr-admin/class/wtr_view_controler.php:1267
 msgid "Roles and users permissions with access to schedule"
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:1254
+#: ../wtr-admin/class/wtr_view_controler.php:1284
 msgid ""
 "Delete all previously added schedule data during uninstallation process."
 msgstr ""
 
-#: ../wtr-admin/class/wtr_view_controler.php:1267
+#: ../wtr-admin/class/wtr_view_controler.php:1297
 msgid "Save"
 msgstr ""
 

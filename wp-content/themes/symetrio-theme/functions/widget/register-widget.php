@@ -21,6 +21,7 @@ if( ! function_exists( 'wtr_register_widget' ) ){
 		register_widget( 'WTR_Menu_Widget' );
 		register_widget( 'WTR_Recent_Comments_Widget' );
 		register_widget( 'WTR_Promo_Box_Widget' );
+		register_widget( 'WTR_Facebook_Like_Box_Widget' );
 	} // end wtr_register_widget
 	add_action( 'widgets_init' , 'wtr_register_widget' );
 }

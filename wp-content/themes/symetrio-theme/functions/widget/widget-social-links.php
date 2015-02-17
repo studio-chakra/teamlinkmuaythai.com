@@ -51,7 +51,7 @@ if( ! class_exists( 'WTR_Social_Links_Widget' ) ) {
 				foreach ( $wtr_social_media as $key => $value) {
 					if( ! empty( $instance[ $key ] ) ) {
 						echo '<li class="wtrWidgetSocialIconItem">';
-							echo '<a href="' . esc_url( $instance[ $key ] ) . '" class="wtrWidgetSocialIconLink">';
+							echo '<a href="' . esc_url( $instance[ $key ] ) . '" target="_blank" class="wtrWidgetSocialIconLink">';
 								echo '<i class="' . esc_attr( $value['icon'] ) . '"></i>';
 							echo '</a>';
 						echo '</li>';

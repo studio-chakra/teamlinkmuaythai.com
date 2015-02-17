@@ -329,6 +329,7 @@ class VCExtendAddonWtr{
 			'posts_per_page'		=> -1,
 			'ignore_sticky_posts'	=> 1,
 			'wtr_add_all_item'		=> true,
+			'fields'				=> 'ids'
 		);
 		$result	= array();
 		$config	= array_merge( $default, $attr );
@@ -336,23 +337,19 @@ class VCExtendAddonWtr{
 		if( $config[ 'wtr_add_all_item' ] ){
 			$result	= array( __( 'Include all', 'wtr_sht_framework' ) => 'wtr_all_items' );
 		}
-
 		// The Query
-		$the_query	= new WP_Query( $config );
+		$posts	= get_posts( $config );
 
-		if ( $the_query->have_posts() ){
-			while ( $the_query->have_posts() ){
-				$the_query->the_post();
-				$name = get_the_title();
+		if ( ! empty( $posts ) ){
+			foreach ( $posts as $post ) {
+				$name = get_the_title( $post );
 				$index = ( trim( $name ) )? $name: __( 'no title', 'wtr_sht_framework' );
 				$index = str_replace( '&#8211;', '-', $index );
 				$index = str_replace( '&#8212;', '-', $index );
-				$result[ ' ' . $index . ' ' ] = get_the_id();
+				$result[ ' ' . $index . ' ' ] = $post;
 			}
 		}
 
-		/* Restore original Post Data */
-		wp_reset_postdata();
 
 		if( !count( $result ) ) {
 			$result = array( __( 'There is no item to choose from', 'wtr_sht_framework' ) => 'NN' );

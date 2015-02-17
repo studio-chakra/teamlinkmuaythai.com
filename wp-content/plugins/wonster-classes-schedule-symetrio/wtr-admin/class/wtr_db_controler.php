@@ -287,29 +287,30 @@ if ( ! class_exists( 'WTR_Cs_db' ) ) {
 				'post_type'				=> 'gym_location',
 				'posts_per_page'		=> -1,
 				'ignore_sticky_posts'	=> 1,
+				'wtr_add_all_item'		=> true,
+				'fields'				=> 'ids'
 			);
 			$result	= array();
 			$config	= array_merge( $default, $attr );
 
-			// The Query
-			$the_query	= new WP_Query( $config );
 
-			if ( $the_query->have_posts() ){
-				while ( $the_query->have_posts() ){
-					$the_query->the_post();
-					$name = get_the_title();
-					$index = ( trim( $name ) )? $name: __( 'no title', 'wtr_cs_framework' );
+			// The Query
+			$posts	= get_posts( $config );
+
+			if ( ! empty( $posts ) ){
+				foreach ( $posts as $post ) {
+					$name = get_the_title( $post );
+					$index = ( trim( $name ) )? $name: __( 'no title', 'wtr_sht_framework' );
+					$index = str_replace( '&#8211;', '-', $index );
+					$index = str_replace( '&#8212;', '-', $index );
 
 					if( 'admin' == $mode ){
-						$result[ get_the_id() ] = $index;
-					}else if( 'public' == $mode ){
-						$result[ get_the_id() ] = array( 'name' => $index, 'post_status' => get_post_status() );
+						$result[ $post ] = $index;
+					}else{
+						$result[ $post ] = array( 'name' => $index, 'post_status' => get_post_status( $post ) );
 					}
 				}
 			}
-
-			/* Restore original Post Data */
-			wp_reset_postdata();
 
 			return $result;
 		}//end getWpQuery
@@ -321,35 +322,32 @@ if ( ! class_exists( 'WTR_Cs_db' ) ) {
 				'post_type'				=> 'trainer',
 				'posts_per_page'		=> -1,
 				'ignore_sticky_posts'	=> 1,
+				'fields'				=> 'ids'
 			);
 
 			// The Query
-			$the_query = new WP_Query( $args );
-			$result = array();
+			$posts	= get_posts( $args );
+			$result	= array();
 
-			if ( $the_query->have_posts() ){
-				while ( $the_query->have_posts() ){
-					$the_query->the_post();
-
-					$nameTrainer	= get_post_meta( get_the_ID(), '_wtr_trainer_name', true );
-					$surnameTrainer	= get_post_meta( get_the_ID(), '_wtr_trainer_last_name', true );
+			if ( ! empty( $posts ) ){
+				foreach ( $posts as $post ) {
+					$nameTrainer	= get_post_meta( $post, '_wtr_trainer_name', true );
+					$surnameTrainer	= get_post_meta( $post, '_wtr_trainer_last_name', true );
 
 					if( $nameTrainer || $surnameTrainer ){
 						$index = trim( $nameTrainer . ' ' . $surnameTrainer );
 					}
 					else{
-						$index = __( 'no title', 'wtr_cs_framework' );
+						$index = __( 'no title', 'wtr_sht_framework' );
 					}
 
 					if( 'admin' == $mode ){
-						$result[ get_the_id() ] = $index;
+						$result[ $post ] = $index;
 					}else if( 'public' == $mode ){
-						$result[ get_the_id() ] = array( 'name' => $index, 'post_status' => get_post_status() );
+						$result[ $post ] = array( 'name' => $index, 'post_status' => get_post_status( $post ) );
 					}
 				}
 			}
-			/* Restore original Post Data */
-			wp_reset_postdata();
 
 			return $result;
 		}//end generateListTrainer
@@ -469,13 +467,22 @@ if ( ! class_exists( 'WTR_Cs_db' ) ) {
 			$trainers_list	= array();
 			$id_trainers	= explode( ';', $result[ 'timetable_info' ][ 'trainers' ][ 'value' ] );
 			$id_trainers	= array_filter( $id_trainers );
+
 			foreach( $id_trainers as $id_trainer ){
-				$result[ 'timetable_info' ][ 'txt_trainers' ][ $id_trainer ] = $trainers[ $id_trainer ];
+				if( isset( $trainers[ $id_trainer ] ) ){
+					$result[ 'timetable_info' ][ 'txt_trainers' ][ $id_trainer ] = $trainers[ $id_trainer ];
+				}
 			}
 
 			//get list of rooms
 			$rooms = $this->getWpQuery( array( 'post_type' => 'rooms' ) );
-			$result[ 'timetable_info' ][ 'txt_id_room' ] = $rooms[ $result[ 'timetable_info' ][ 'id_room' ][ 'value' ] ];
+
+			if( isset( $rooms[ $result[ 'timetable_info' ][ 'id_room' ][ 'value' ] ]) ){
+				$result[ 'timetable_info' ][ 'txt_id_room' ] = $rooms[ $result[ 'timetable_info' ][ 'id_room' ][ 'value' ] ];
+			}else{
+				$result[ 'timetable_info' ][ 'txt_id_room' ] = '';
+			}
+
 
 			//time duration
 			$start_time	= strtotime( "2014-03-22 " . $result[ 'timetable_info' ][ 'time_hour_start' ][ 'value' ] . ":" . $result[ 'timetable_info' ][ 'time_minute_start' ][ 'value' ] . ":00" );
@@ -712,14 +719,21 @@ if ( ! class_exists( 'WTR_Cs_db' ) ) {
 
 				//merge values
 				foreach( $scope as $id_scope => $fields ){
-					$scope[ $id_scope ][ 'txt_id_classes' ][ 'value' ]	= $classes[ $fields[ 'id_classes' ][ 'value' ] ];
-					$scope[ $id_scope ][ 'txt_id_room' ][ 'value' ]	= $rooms[ $fields[ 'id_room' ][ 'value' ] ];
+					if( isset( $classes[ $fields[ 'id_classes' ][ 'value' ] ] ) ){
+						$scope[ $id_scope ][ 'txt_id_classes' ][ 'value' ]	= $classes[ $fields[ 'id_classes' ][ 'value' ] ];
+					}
+
+					if( isset( $rooms[ $fields[ 'id_room' ][ 'value' ] ] ) ){
+						$scope[ $id_scope ][ 'txt_id_room' ][ 'value' ]	= $rooms[ $fields[ 'id_room' ][ 'value' ] ];
+					}
 
 					$trainers_list	= array();
 					$id_trainers	= explode( ';', $scope[ $id_scope ][ 'trainers' ][ 'value' ] );
 					$id_trainers	= array_filter( $id_trainers );
 					foreach( $id_trainers as $id_trainer ){
-						array_push( $trainers_list, $trainers[ $id_trainer ] );
+						if( isset( $trainers[ $id_trainer ] ) ){
+							array_push( $trainers_list, $trainers[ $id_trainer ] );
+						}
 					}
 					$scope[ $id_scope ][ 'txt_trainers' ][ 'value' ] = implode( ', ', $trainers_list );
 				}
@@ -1108,14 +1122,24 @@ if ( ! class_exists( 'WTR_Cs_db' ) ) {
 							$class	= $instances[ $day ][ $id_instance ][ 'id_classes' ][ 'value' ];
 							$room	= $instances[ $day ][ $id_instance ][ 'id_room' ][ 'value' ];
 
-							$instances[ $day ][ $id_instance ][ 'txt_id_classes' ][ 'value' ] = $classes[ $class ];
-							$instances[ $day ][ $id_instance ][ 'txt_id_room' ][ 'value' ] = $rooms[ $room ];
+							if( isset( $classes[ $class ] ) ){
+								$instances[ $day ][ $id_instance ][ 'txt_id_classes' ][ 'value' ] = $classes[ $class ];
+							}
+
+							if( isset( $rooms[ $room ] ) ){
+								$instances[ $day ][ $id_instance ][ 'txt_id_room' ][ 'value' ] = $rooms[ $room ];
+							}else{
+								$instances[ $day ][ $id_instance ][ 'txt_id_room' ][ 'value' ] = '';
+							}
 
 							$trainers_list	= array();
 							$id_trainers	= explode( ';', $instances[ $day ][ $id_instance ][ 'trainers' ][ 'value' ] );
 							$id_trainers	= array_filter( $id_trainers );
+
 							foreach( $id_trainers as $id_trainer ){
-								array_push( $trainers_list, $trainers[ $id_trainer ] );
+								if( isset( $trainers[ $id_trainer ] ) ){
+									array_push( $trainers_list, $trainers[ $id_trainer ] );
+								}
 							}
 							$instances[ $day ][ $id_instance ][ 'txt_trainers' ][ 'value' ] = implode( ', ', $trainers_list );
 						}
@@ -1150,7 +1174,7 @@ if ( ! class_exists( 'WTR_Cs_db' ) ) {
 								$copy[ $day ][ $id_instance ][ 'detal_classes' ] = $classes[ $class ];
 
 								$copy[ $day ][ $id_instance ][ 'detal_room' ] = array();
-								if( 'publish' == $rooms[ $room ][ 'post_status' ] ){
+								if( isset( $rooms[ $room ] ) && 'publish' == $rooms[ $room ][ 'post_status' ] ){
 									$copy[ $day ][ $id_instance ][ 'detal_room' ] = $rooms[ $room ];
 								}
 

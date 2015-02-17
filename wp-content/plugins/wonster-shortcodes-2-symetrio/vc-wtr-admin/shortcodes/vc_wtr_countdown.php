@@ -8,6 +8,7 @@ class VCExtendAddonCountdown extends VCExtendAddonWtr{
 
 	public $base	= 'vc_wtr_countdown';
 	public $fields	= array();
+	private static $sht_countdown_js	= 'var wtr_countdown_name = {};';
 
 	//===FUNCTIONS
 	public function __construct(){
@@ -16,6 +17,8 @@ class VCExtendAddonCountdown extends VCExtendAddonWtr{
 
 		// We safely integrate with VC with this hook
 		add_action( 'init', array( &$this, 'integrateWithVC' ) );
+		// JS
+		add_action( 'wp_footer', array( &$this, 'loadJs' ) );
 
 		//Creating a shortcode addon
 		add_shortcode( $this->base, array( &$this, 'render' ) );
@@ -125,29 +128,38 @@ class VCExtendAddonCountdown extends VCExtendAddonWtr{
 		$atts	= $this->prepareCorrectShortcode( $this->fields, $atts );
 		extract($atts);
 
+		global $post_settings;
+
+		self::$sht_countdown_js ="var wtr_countdown_name = { y: '" . $post_settings['wtr_TranslateCountdownSHTYears'] . "', m : '" . $post_settings['wtr_TranslateCountdownSHTMonths'] . "', w : '" . $post_settings['wtr_TranslateCountdownSHTWeeks'] . "',d:'" . $post_settings['wtr_TranslateCountdownSHTDays'] . "' , 'h' : '" . $post_settings['wtr_TranslateCountdownSHTHours'] . "', m : '" . $post_settings['wtr_TranslateCountdownSHTMinutes']  . "', s : '" . $post_settings['wtr_TranslateCountdownSHTSeconds'] . "' }";
+
 		$result = '<div data-year="' . intval( $year ) . '" data-month="' . intval( $month ) . '" data-day="' . intval( $day ) . '" data-hour="' . intval( $hour ) . '" data-minute="' . intval( $minute ) . '" class="wtrShtCountdown '. esc_attr( $version ) . ' clearfix ' . esc_attr( $el_class ) . '">';
 			$result .= '<span class="countdown-row countdown-show4">';
 				$result .= '<span class="countdown-section">';
 					$result .= '<span class="wrtAltFontCharacter countdown-amount">0</span>';
-					$result .= '<span class="countdown-period">Days</span>';
+					$result .= '<span class="countdown-period">' . $post_settings['wtr_TranslateCountdownSHTDays'] . '</span>';
 				$result .= '</span>';
 				$result .= '<span class="countdown-section">';
 						$result .= '<span class="wrtAltFontCharacter countdown-amount">0</span>';
-						$result .= '<span class="countdown-period">Hours</span>';
+						$result .= '<span class="countdown-period">' . $post_settings['wtr_TranslateCountdownSHTHours'] . '</span>';
 				$result .= '</span>';
 				$result .= '<span class="countdown-section">';
 					$result .= '<span class="wrtAltFontCharacter countdown-amount">0</span>';
-					$result .= '<span class="countdown-period">Minutes</span>';
+					$result .= '<span class="countdown-period">' . $post_settings['wtr_TranslateCountdownSHTMinutes'] . '</span>';
 				$result .= '</span>';
 				$result .= '<span class="countdown-section">';
 					$result .= '<span class="wrtAltFontCharacter countdown-amount">0</span>';
-					$result .= '<span class="countdown-period">Seconds</span>';
+					$result .= '<span class="countdown-period">' . $post_settings['wtr_TranslateCountdownSHTSeconds'] . '</span>';
 				$result .= '</span>';
 			$result .= '</span>';
 		$result .= '</div>';
 
 		return $result;
 	}//end render
+
+
+	public function loadJs(){
+		echo '<script type="text/javascript">' . self::$sht_countdown_js . '</script>';
+	}//end loadJs
 
 }//end VCExtendAddonCountdown
 

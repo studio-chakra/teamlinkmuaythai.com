@@ -112,6 +112,36 @@ if ( ! class_exists( 'WTR_Shortcode_Icon' ) ) {
 			);
 			array_push( $this->fields[ 'basic' ][ 'fields' ], $version );
 
+			$url = new WTR_Text(array(
+					'id'			=> $this->shortcode_id . '_url',
+					'class'			=> 'ModalFields ReadStandard VCModUrl',
+					'title'			=> __( 'Link URL', 'wtr_sht_framework' ),
+					'desc'			=> __( 'Where should notification link to?', 'wtr_sht_framework' ),
+					'value'			=> 'http://',
+					'default_value' => '',
+					'info'			=> __( '<b>Please fill full path</b>. Example: https://google.com', 'wtr_sht_framework' ),
+					'allow'			=> 'all',
+				)
+			);
+			array_push( $this->fields[ 'basic' ][ 'fields' ], $url );
+
+			$target = new WTR_Select( array(
+					'id'			=> $this->shortcode_id . '_target',
+					'title'			=> __( 'Link target', 'wtr_sht_framework' ),
+					'desc'			=> __( 'Select how do you want to open the linked page', 'wtr_sht_framework' ),
+					'class'			=> 'ModalFields ReadStandard',
+					'value'			=> '1',
+					'default_value'	=> '',
+					'info'			=> '',
+					'allow'			=> 'all',
+					'mod'			=> '',
+					'option'		=> array('1' => __( 'Open in NEW window', 'wtr_sht_framework' ),
+											 '0' => __( 'Open in SAME window', 'wtr_sht_framework' ),
+										),
+				)
+			);
+			array_push( $this->fields[ 'basic' ][ 'fields' ], $target );
+
 			$type_icon = new WTR_Icon( array(
 					'id'			=> $this->shortcode_id . '_type_icon',
 					'title'			=> __( 'Icon', 'wtr_sht_framework' ),

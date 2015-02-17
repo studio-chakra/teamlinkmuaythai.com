@@ -86,12 +86,21 @@ class VCExtendAddonWtrSystem extends VCExtendAddonWtr{
 			}
 
 			// remove default vc shortcode
-			$this->shtToRemove = array( 'vc_wp_search', 'vc_wp_meta', 'vc_wp_recentcomments', 'vc_wp_calendar', 'vc_wp_pages',
+/*			$this->shtToRemove = array( 'vc_wp_search', 'vc_wp_meta', 'vc_wp_recentcomments', 'vc_wp_calendar', 'vc_wp_pages',
 										'vc_wp_tagcloud', 'vc_wp_custommenu', 'vc_wp_text', 'vc_wp_posts', 'vc_wp_links',
 										'vc_wp_categories', 'vc_wp_archives', 'vc_wp_rss', 'vc_text_separator', 'vc_tour',
 										'vc_toggle', 'vc_widget_sidebar', 'vc_message', 'vc_button', 'vc_button2',
 										'vc_cta_button', 'vc_cta_button2', 'vc_carousel', 'vc_gmaps', 'vc_posts_grid',
 										'vc_posts_slider', 'vc_separator', 'vc_gallery', 'vc_images_carousel', 'vc_video',
+										'vc_pie', 'vc_progress_bar',
+										 );*/
+
+			$this->shtToRemove = array( 'vc_wp_search', 'vc_wp_meta', 'vc_wp_recentcomments', 'vc_wp_calendar', 'vc_wp_pages',
+										'vc_wp_tagcloud', 'vc_wp_custommenu', 'vc_wp_text', 'vc_wp_posts', 'vc_wp_links',
+										'vc_wp_categories', 'vc_wp_archives', 'vc_wp_rss','vc_tour',
+										'vc_toggle', 'vc_widget_sidebar', 'vc_message',
+										'vc_cta_button', 'vc_cta_button2', 'vc_carousel', 'vc_gmaps', 'vc_posts_grid',
+										'vc_posts_slider', 'vc_gallery', 'vc_images_carousel', 'vc_video',
 										'vc_pie', 'vc_progress_bar',
 										 );
 

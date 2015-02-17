@@ -244,7 +244,7 @@ $wtr_Color_19 = new WTR_Customize_Setting ( array(
 		'default'		=> '#1fce6d',
 		'control_args'	=> array( 'label' 	=> __( 'Distinctive font color for valid elemnts', 'wtr_framework' ) ),
 		'control_type'	=> 'color',
-		'css_selector' 	=> '.wtrBreadcrumbPathList .wtrCrumb a:hover, .wtrShtFullWidthTabs .wtrShtFWT li.tab-current i, .wtrDailyScheduleHeadlineDate, .wtrEventCategoryItem a.active, .wtrHeaderTransparent.wtrHeaderFixed.wtrMenuScroll a.wtrTriggerMobileMenu i, .shipping_calculator h2 a.shipping-calculator-button,.woocommerce .products .product .price,.woocommerce ul.products li.product a:hover h3,.woocommerce p.myaccount_user strong,.woocommerce .cart_item a,.woocommerce .stock,.woocommerce .in-stock,.woocommerce #content div.product .woocommerce-tabs ul.tabs li.active,.woocommerce div.product .woocommerce-tabs ul.tabs li.active,.woocommerce #content div.product p.price,.woocommerce #content div.product span.price,.woocommerce div.product p.price,.woocommerce div.product span.price,.woocommerce-page #content div.product .woocommerce-tabs ul.tabs li.active,.woocommerce-page div.product .woocommerce-tabs ul.tabs li.active,.woocommerce-page #content div.product p.price,.woocommerce-page #content div.product span.price,.woocommerce-page div.product p.price,.woocommerce-page div.product span.price,/* WooCommerce */.wtrTimeTableModalTabs .resp-tab-active,.wtrTimeTableModalTabsList li:hover,.wtrShtGoogleMaps a,.wtrShtLastNewsStandard .wtrShtLastNewsStandardHeadlineColor:hover,.wtrShtLastNewsListStreamItem:hover .wtrShtLastNewsListItemTitle a,.wtrShtLastNewsListStreamItem:hover .wtrShtLastNewsListItemTitle,.wtrShtTabs .resp-tab-active,.wtrShtTabs .resp-tabs-list li:hover,.wtrShtEventListBtn:hover,.wtrShtEventListItem .wtrShtEventListTittle a:hover,.wtrShtClassesListTimeInfo i,.wtrShtClassesListKcallInfo i,.wtrShtClassesListItem .wtrShtClassesListTittle a:hover,.wtrShtAccordion ul .wtrShtAccordionItem:hover .wtrShtAccordionNavi:after,.wtrShtAccordion ul .wtrShtAccordionItem .wtrShtAccordionHeadline:hover,.wtrShtAccordion ul .wtrShtAccordionItem.st-open .wtrShtAccordionHeadline,.wtrShtAccordion ul .wtrShtAccordionItem.st-open > .wtrShtAccordionHeadline .wtrShtAccordionNavi:after,.wtrShtStepByStepIco,.wtrShtStepByStepItem:after,.wtrShtIconContainer,.no-touch .hi-icon-effect-1a .hi-icon,.no-touch .hi-icon-effect-9a .hi-icon:hover,.no-touch .hi-icon-effect-8 .hi-icon:hover,.hi-icon,.wtrShtOpenHoursDesc a,.wtrShtPassesListLight .wtrShtPassesListNavi:after,.wtrShtPassesListLight .wtrShtPassesListItem .wtrShtPassesListNavi:after,.wtrShtPassesListLight .wtrShtPassesListItem .wtrShtPassesListHeadlineItem:hover,.wtrShtPassesListLight .wtrShtPassesListItem.st-open .wtrShtPassesListHeadlineItem,.wtrShtPassesListLight .wtrShtPassesListItem.st-open .wtrShtPassesListHeadline .wtrShtPassesListNavi:after,.wtrShtPassesListLight .wtrShtPassesListItem:hover .wtrShtPassesListNavi:after,.wtrShtPassesListLight .wtrShtPassesListItem:hover,.wtrShtPassesListLight .wtrShtPassesListItem.st-open,.wtrShtSliderGallery .flex-direction-nav a,.wtrShtIconBoxList span i,.wtrMainNavigation .wtrThirdNavi .wtrSecNaviItemLink:hover .wtrDropIcon:after, .wtrMegaMenuHeadline a:hover,a.wtrSecondMenuLinkColor:hover,.wtrDefHedlineLinkColor a:hover, .wtrEventEntryMetaDate i, .wtrEventEntryCategoryItemHeadline, .wtrVeOrName, .wtrDefaultLinkColor, .wtrTrainerPageTrainerFunction,  .wtrEventStreamItemMetaDate i, .current-menu-item.wtrMegaMenuHeadline a, .current-menu-ancestor.wtrSecondDrop .current-menu-ancestor.wtrThirdNavi .wtrDropIcon:after, .current-menu-item > span, .current-menu-item > a > span, .current-menu-item > a, blockquote:after, .wtrMenuScroll.wtrHeaderTransparent .wtrMainNavigation .current-menu-ancestor > a, .wtrMenuScroll.wtrHeaderTransparent .wtrMainNavigation .current-menu-ancestor > span, .wtrPageContent p a:not(.button):not(.wtrButtonStd):not(.wtrClientUrl):not(.wtrShtEventListBtn):not(.wtrDefBorderLink):not(.chosen-single):not(.remove):not(.star-5):not(.star-4):not(.star-3):not(.star-2):not(.star-1), .wpb_text_column a:not(.button):not(.showcoupon):not(.remove):not(.wtrButtonStd):not(.chosen-single), .comment-content a, .wtrPageContent table a:not(.wtrShtTimeTableEntryName):not(.remove):not(.wtrShtTimeTableEntryTrainer):not(.wtrShtTimeTableEntryRoom), .wtrPageContent dl a, .wtrCommentList .trackback a, .wtrCommentList .pingback a',
+		'css_selector' 	=> '.wtrBreadcrumbPathList .wtrCrumb a:hover, .wtrShtFullWidthTabs .wtrShtFWT li.tab-current i, .wtrDailyScheduleHeadlineDate, .wtrEventCategoryItem a.active, .wtrHeaderTransparent.wtrHeaderFixed.wtrMenuScroll a.wtrTriggerMobileMenu i, .shipping_calculator h2 a.shipping-calculator-button,.woocommerce .products .product .price,.woocommerce ul.products li.product a:hover h3,.woocommerce p.myaccount_user strong,.woocommerce .cart_item a,.woocommerce .stock,.woocommerce .in-stock,.woocommerce #content div.product .woocommerce-tabs ul.tabs li.active,.woocommerce div.product .woocommerce-tabs ul.tabs li.active,.woocommerce #content div.product p.price,.woocommerce #content div.product span.price,.woocommerce div.product p.price,.woocommerce div.product span.price,.woocommerce-page #content div.product .woocommerce-tabs ul.tabs li.active,.woocommerce-page div.product .woocommerce-tabs ul.tabs li.active,.woocommerce-page #content div.product p.price,.woocommerce-page #content div.product span.price,.woocommerce-page div.product p.price,.woocommerce-page div.product span.price,/* WooCommerce */.wtrTimeTableModalTabs .resp-tab-active,.wtrTimeTableModalTabsList li:hover,.wtrShtGoogleMaps a,.wtrShtLastNewsStandard .wtrShtLastNewsStandardHeadlineColor:hover,.wtrShtLastNewsListStreamItem:hover .wtrShtLastNewsListItemTitle a,.wtrShtLastNewsListStreamItem:hover .wtrShtLastNewsListItemTitle,.wtrShtTabs .resp-tab-active,.wtrShtTabs .resp-tabs-list li:hover,.wtrShtEventListBtn:hover,.wtrShtEventListItem .wtrShtEventListTittle a:hover,.wtrShtClassesListTimeInfo i,.wtrShtClassesListKcallInfo i,.wtrShtClassesListItem .wtrShtClassesListTittle a:hover,.wtrShtAccordion ul .wtrShtAccordionItem:hover .wtrShtAccordionNavi:after,.wtrShtAccordion ul .wtrShtAccordionItem .wtrShtAccordionHeadline:hover,.wtrShtAccordion ul .wtrShtAccordionItem.st-open .wtrShtAccordionHeadline,.wtrShtAccordion ul .wtrShtAccordionItem.st-open > .wtrShtAccordionHeadline .wtrShtAccordionNavi:after,.wtrShtStepByStepIco,.wtrShtStepByStepItem:after,.wtrShtIconContainer,.no-touch .hi-icon-effect-1a .hi-icon,.no-touch .hi-icon-effect-9a .hi-icon:hover,.no-touch .hi-icon-effect-8 .hi-icon:hover,.hi-icon,.wtrShtOpenHoursDesc a,.wtrShtPassesListLight .wtrShtPassesListNavi:after,.wtrShtPassesListLight .wtrShtPassesListItem .wtrShtPassesListNavi:after,.wtrShtPassesListLight .wtrShtPassesListItem .wtrShtPassesListHeadlineItem:hover,.wtrShtPassesListLight .wtrShtPassesListItem.st-open .wtrShtPassesListHeadlineItem,.wtrShtPassesListLight .wtrShtPassesListItem.st-open .wtrShtPassesListHeadline .wtrShtPassesListNavi:after,.wtrShtPassesListLight .wtrShtPassesListItem:hover .wtrShtPassesListNavi:after,.wtrShtPassesListLight .wtrShtPassesListItem:hover,.wtrShtPassesListLight .wtrShtPassesListItem.st-open,.wtrShtSliderGallery .flex-direction-nav a,.wtrShtIconBoxList span i,.wtrMainNavigation .wtrThirdNavi .wtrSecNaviItemLink:hover .wtrDropIcon:after, .wtrMegaMenuHeadline a:hover,a.wtrSecondMenuLinkColor:hover,.wtrDefHedlineLinkColor a:hover, .wtrEventEntryMetaDate i, .wtrEventEntryCategoryItemHeadline, .wtrVeOrName, .wtrDefaultLinkColor, .wtrTrainerPageTrainerFunction,  .wtrEventStreamItemMetaDate i, .current-menu-item.wtrMegaMenuHeadline a, .current-menu-ancestor.wtrSecondDrop .current-menu-ancestor.wtrThirdNavi .wtrDropIcon:after, .current-menu-item > span, .current-menu-item > a > span, .current-menu-item > a, blockquote:after, .wtrMenuScroll.wtrHeaderTransparent .wtrMainNavigation .current-menu-ancestor > a, .wtrMenuScroll.wtrHeaderTransparent .wtrMainNavigation .current-menu-ancestor > span, .wtrPageContent p a:not(.button):not(.wtrButtonStd):not(.wtrClientUrl):not(.wtrShtEventListBtn):not(.wtrDefBorderLink):not(.chosen-single):not(.remove):not(.star-5):not(.star-4):not(.star-3):not(.star-2):not(.star-1):not(.ptp-button), .wpb_text_column a:not(.button):not(.showcoupon):not(.remove):not(.wtrButtonStd):not(.chosen-single):not(.ptp-button), .comment-content a, .wtrPageContent table a:not(.wtrShtTimeTableEntryName):not(.remove):not(.wtrShtTimeTableEntryTrainer):not(.wtrShtTimeTableEntryRoom):not(.ptp-button), .wtrPageContent dl a, .wtrCommentList .trackback a, .wtrCommentList .pingback a',
 		'css_style' 	=> 'color',
 		'css_important'	=> true,
 		'transport'		=> 'refresh',
@@ -345,6 +345,105 @@ $wtr_Color_28 = new WTR_Customize_Setting ( array(
 		'control_type'	=> 'color',
 		'css_selector' 	=> '.woocommerce .product span.onsale, .woocommerce .wtrContainer span.onsale, .woocommerce span.onsale',
 		'css_style' 	=> 'background-color',
+		'css_important'	=> true,
+		)
+);
+
+$wtr_Color_86 = new WTR_Customize_Setting ( array(
+		'id' 			=> 'wtr_Color_86',
+		'default'		=> '#1fce6d',
+		'control_args'	=> array( 'label' 	=> __( 'Pricing table price section background color', 'wtr_framework' ) ),
+		'control_type'	=> 'color',
+		'css_selector' 	=> '.ptp-price',
+		'css_style' 	=> 'background-color',
+		'css_important'	=> true,
+		)
+);
+
+$wtr_Color_87 = new WTR_Customize_Setting ( array(
+		'id' 			=> 'wtr_Color_87',
+		'default'		=> '#ffffff',
+		'control_args'	=> array( 'label' 	=> __( 'Pricing table price section font color', 'wtr_framework' ) ),
+		'control_type'	=> 'color',
+		'css_selector' 	=> '.ptp-price',
+		'css_style' 	=> 'color',
+		'css_important'	=> true,
+		)
+);
+
+$wtr_Color_88 = new WTR_Customize_Setting ( array(
+		'id' 			=> 'wtr_Color_88',
+		'default'		=> '#000000',
+		'control_args'	=> array( 'label' 	=> __( 'Pricing table plan name font color', 'wtr_framework' ) ),
+		'control_type'	=> 'color',
+		'css_selector' 	=> '.ptp-plan',
+		'css_style' 	=> 'color',
+		'css_important'	=> true,
+		)
+);
+
+$wtr_Color_89 = new WTR_Customize_Setting ( array(
+		'id' 			=> 'wtr_Color_89',
+		'default'		=> '#dddddd',
+		'control_args'	=> array( 'label' 	=> __( 'Pricing table border color', 'wtr_framework' ) ),
+		'control_type'	=> 'color',
+		'css_selector' 	=> '.ptp-bullet-item, .ptp-item-container',
+		'css_style' 	=> 'border-color',
+		'css_important'	=> true,
+		)
+);
+
+$wtr_Color_90 = new WTR_Customize_Setting ( array(
+		'id' 			=> 'wtr_Color_90',
+		'default'		=> '#555555',
+		'control_args'	=> array( 'label' 	=> __( 'Pricing table description section font color', 'wtr_framework' ) ),
+		'control_type'	=> 'color',
+		'css_selector' 	=> '.ptp-bullet-item',
+		'css_style' 	=> 'color',
+		'css_important'	=> true,
+		)
+);
+
+$wtr_Color_91 = new WTR_Customize_Setting ( array(
+		'id' 			=> 'wtr_Color_91',
+		'default'		=> '#ffffff',
+		'control_args'	=> array( 'label' 	=> __( 'Pricing table description section background color', 'wtr_framework' ) ),
+		'control_type'	=> 'color',
+		'css_selector' 	=> '.ptp-plan, .ptp-cta, .ptp-bullet-item',
+		'css_style' 	=> 'background-color',
+		'css_important'	=> true,
+		)
+);
+
+$wtr_Color_92 = new WTR_Customize_Setting ( array(
+		'id' 			=> 'wtr_Color_92',
+		'default'		=> '#1B9F56',
+		'control_args'	=> array( 'label' 	=> __( ' Pricing table featured column background color', 'wtr_framework' ) ),
+		'control_type'	=> 'color',
+		'css_selector' 	=> '.ptp-highlight .ptp-cta, .ptp-highlight .ptp-bullet-item, .ptp-most-popular, .ptp-highlight .ptp-plan',
+		'css_style' 	=> 'background-color',
+		'css_important'	=> true,
+		)
+);
+
+$wtr_Color_93 = new WTR_Customize_Setting ( array(
+		'id' 			=> 'wtr_Color_93',
+		'default'		=> '#1fce6d',
+		'control_args'	=> array( 'label' 	=> __( 'Pricing table featured column price section background color', 'wtr_framework' ) ),
+		'control_type'	=> 'color',
+		'css_selector' 	=> '.ptp-highlight .ptp-price',
+		'css_style' 	=> 'background-color',
+		'css_important'	=> true,
+		)
+);
+
+$wtr_Color_94 = new WTR_Customize_Setting ( array(
+		'id' 			=> 'wtr_Color_94',
+		'default'		=> '#ffffff',
+		'control_args'	=> array( 'label' 	=> __( 'Featured column font color', 'wtr_framework' ) ),
+		'control_type'	=> 'color',
+		'css_selector' 	=> '.ptp-highlight .ptp-price, .ptp-highlight .ptp-bullet-item, .ptp-most-popular, .ptp-highlight .ptp-plan',
+		'css_style' 	=> 'color',
 		'css_important'	=> true,
 		)
 );
@@ -1012,6 +1111,15 @@ $wtr_OthersColorsSection  = new WTR_Customize_Section( array(
 			$wtr_Color_26,
 			$wtr_Color_27,
 			$wtr_Color_28,
+			$wtr_Color_86,
+			$wtr_Color_87,
+			$wtr_Color_88,
+			$wtr_Color_89,
+			$wtr_Color_90,
+			$wtr_Color_91,
+			$wtr_Color_92,
+			$wtr_Color_93,
+			$wtr_Color_94,
 		)
 	)
 );

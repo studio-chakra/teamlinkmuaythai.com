@@ -72,6 +72,16 @@ class VCExtendAddonIcon extends VCExtendAddonWtr{
 			),
 
 			array(
+				'param_name'	=> 'url',
+				'heading'		=> __( 'Link', 'wtr_sht_framework' ),
+				'description'	=> __( 'Where should your link to?. <b>Optional field</b>', 'wtr_sht_framework' ),
+				'type'			=> 'vc_link',
+				'value'			=> '',
+				'admin_label' 	=> true,
+				'class'			=> $this->base . '_url_class',
+			),
+
+			array(
 				'param_name'	=> 'type_icon',
 				'heading'		=> __( 'Icon', 'wtr_sht_framework' ),
 				'description'	=> __( 'Select the icon set', 'wtr_sht_framework' ),
@@ -159,7 +169,20 @@ class VCExtendAddonIcon extends VCExtendAddonWtr{
 		$atts	= $this->prepareCorrectShortcode( $this->fields, $atts );
 		extract( $atts );
 
+		$url_str	= ( ( 0 == substr_count( $url, '|' ) ) AND isset( $target ) ) ? $url . '|target:'. esc_attr( $target ) : $url;
+		$url_str	= str_replace("|", "&", $url_str );
+		$url_str	= str_replace(":", "=", $url_str );
+		parse_str( $url_str, $url_attr );
 
+		extract(shortcode_atts(array(
+			'url'		=> '',
+			'target'	=> '',
+		), $url_attr) );
+
+		$target			= ( empty( $target ) ) ? '' : 'target="_blank"';
+		$icon			= explode( "|", $type_icon );
+		$icon			= ( 2 == count( $icon ) ) ? esc_attr( $icon[1] ) : '';
+		$url			= esc_url( $url );
 
 		$icon				= explode( "|", $type_icon );
 		$float_style		= ( 'none' != $float ) ? $float : '' ;
@@ -173,9 +196,17 @@ class VCExtendAddonIcon extends VCExtendAddonWtr{
 
 			$result .= '<div ' . $this->shtAnimateHTML( $class_html_attr, $atts ) . '>';
 				$result .= '<div class="hi-icon-wrap ' . $class_circle . '" ' . $align_style . '>';
-					$result .= '<a href="#set-1" class="hi-icon">';
-						$result .= '<i class="' . esc_attr( $icon[1] ) . '"></i>';
-					$result .= '</a>';
+
+					if( ! empty( $url ) ){
+						$result .= '<a href="' . $url . '" ' . $target . ' class="hi-icon">';
+							$result .= '<i class="' . esc_attr( $icon[1] ) . '"></i>';
+						$result .= '</a>';
+					}else{
+						$result .= '<span class="hi-icon">';
+							$result .= '<i class="' . esc_attr( $icon[1] ) . '"></i>';
+						$result .= '</span>';
+					}
+
 				$result .= '</div>';
 			$result .= '</div>';
 
@@ -193,7 +224,15 @@ class VCExtendAddonIcon extends VCExtendAddonWtr{
 			$class_html_attr = $icon[1] . ' ' . $el_class . ' ' . $float_style;
 
 			$result .= $align_start;
-			$result .= '<i style="color:' . $color .';font-size:' . intval( $size ) .'px;" ' . $this->shtAnimateHTML( $class_html_attr, $atts ) . '></i>';
+
+				if( ! empty( $url ) ){
+					$result .= '<a href="' . $url . '" ' . $target . '>';
+						$result .= '<i style="color:' . $color .';font-size:' . intval( $size ) .'px;" ' . $this->shtAnimateHTML( $class_html_attr, $atts ) . '></i>';
+					$result .= '</a>';
+				}else{
+					$result .= '<i style="color:' . $color .';font-size:' . intval( $size ) .'px;" ' . $this->shtAnimateHTML( $class_html_attr, $atts ) . '></i>';
+				}
+
 			$result .= $align_end;
 		}
 

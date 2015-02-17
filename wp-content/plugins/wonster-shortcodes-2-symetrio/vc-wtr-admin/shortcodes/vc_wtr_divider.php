@@ -201,6 +201,7 @@ class VCExtendAddonDivider extends VCExtendAddonWtr{
 				$container			= 'hr';
 				$class				= 'wtrHrDivider';
 				$style				= 'height:' . intval( $height ) . 'px;';
+				$divider_align		= '';
 			break;
 
 			case 'line':

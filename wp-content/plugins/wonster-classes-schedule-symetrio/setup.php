@@ -3,7 +3,7 @@
 Plugin Name: Wonster Classes Schedule - Symetrio Edition
 Plugin URI:
 Description:
-Version: 1.1
+Version: 1.4
 Author: Wonster
 Author URI: http://wonster.co
 */

@@ -96,11 +96,13 @@
 /* Tabs */
 	.vc_wtr_tabs_icon{
 		background-image: url("../images/vc-icons/vc_wtr_tabs.png") !important;
+		background-position: 0px 0px !important;
 	}
 
 /* Accordion */
 	.vc_wtr_accordion_icon{
 		background-image: url("../images/vc-icons/vc_wtr_accordian.png") !important;
+		background-position: 0px 0px !important;
 	}
 
 /* Divider */
@@ -116,6 +118,7 @@
 /* Row */
 	.vc_wtr_row_icon{
 		background-image: url("../images/vc-icons/vc_wtr_row.png") !important;
+		background-position: 0px 0px !important;
 	}
 
 	.wpb-content-layouts #vc_row {
@@ -130,6 +133,11 @@
 	.vc_wtr_icon_icon{
 		background-image: url("../images/vc-icons/vc_wtr_icons.png") !important;
 	}
+
+	.wpb_vc_wtr_icon .vc_wtr_icon_icon{
+		margin-bottom: 30px !important;
+	}
+
 
 /* Icon Box */
 	.wpb_vc_wtr_icon_box .wpb_element_wrapper {

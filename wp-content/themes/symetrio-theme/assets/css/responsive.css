@@ -172,7 +172,7 @@
 	}
 
 	.wtrClassesTrainers{
-		width: 71% !important
+		width: 100% !important
 	}
 
 	.wtrClassesTrainerItem{
@@ -546,11 +546,15 @@
 	}
 
 	.wtrClassesTrainers{
-		width: 71% !important
+		width: 100% !important
 	}
 
 	.wtrClassesTrainerItem{
 		margin-right: 30px;
+	}
+
+	.wtrClassesTrainerItemName{
+		font-size: 16px;
 	}
 
 	.wtrEventEntryHeadlineContainer{
@@ -997,7 +1001,7 @@
 
 	.wtrClassesTrainers .wtrHeadlineElement{
 		width: 100%;
-		margin-bottom: 30px !important;
+		margin-bottom: 40px !important;
 	}
 
 	.wtrClassesTrainerPicture{
@@ -1779,6 +1783,8 @@
 	.wtrClassesNameHeadline{
 		line-height: 1.0;
 		display: block;
+		font-size: 30px;
+		word-break: break-word;
 	}
 
 	.wtrClassesNameHeadline,
@@ -1809,13 +1815,13 @@
 	}
 
 	.wtrClassesTrainers .wtrHeadlineElement{
-		margin-bottom: 20px;
+		margin-bottom: 40px;
 	}
 
 	.wtrClassesTrainerItem{
 		border: 0;
 		padding: 0;
-		margin-bottom: 20px;
+		margin-bottom: 40px;
 		width: 100%;
 	}
 

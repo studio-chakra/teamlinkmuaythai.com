@@ -100,6 +100,7 @@ require_once( WTR_WIDGET_DIR . '/widget-social-links.php' );
 require_once( WTR_WIDGET_DIR . '/widget-menu.php' );
 require_once( WTR_WIDGET_DIR . '/widget-recent-comments.php' );
 require_once( WTR_WIDGET_DIR . '/widget-promo-box.php' );
+require_once( WTR_WIDGET_DIR . '/widget-facebook-like-box.php' );
 
 //Plugins
 require_once( WTR_PLUGINS_DIR . '/class-tgm-plugin-activation.php' );

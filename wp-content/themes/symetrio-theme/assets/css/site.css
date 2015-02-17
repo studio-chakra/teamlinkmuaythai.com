@@ -296,6 +296,10 @@ h6 {
 	transition: 		all .15s ease-in-out;
 }
 
+#wp-admin-bar-wtr_options .ab-item:before {
+	content: '\f100'; top: 2px;
+}
+
 
 
 
@@ -4242,8 +4246,7 @@ a img.aligncenter {
 	height: auto;
 	position: relative;
 	background-repeat: no-repeat;
-	background-position-y: 50%;
-	background-position-x: 50%;
+	background-position: 50% 50%;
 }
 
 .wtrClassesOverlay{
@@ -4365,8 +4368,7 @@ a img.aligncenter {
 
 .wtrClassesTrainers .wtrHeadlineElement{
 	padding: 0;
-	float: left;
-	margin: 16px 30px 16px 0;
+	margin: 0px 0px 40px 0;
 }
 
 .wtrClassesTrainerInfo .wtrColFourFifth,
@@ -4385,13 +4387,20 @@ a img.aligncenter {
 	box-shadow: 		0px 0px 2px 0px rgba(0,0,0,0.4);
 }
 
+ul.wtrClassesTrainerList li:nth-child(3n){
+	margin-right: 0px !important;
+	padding-right: 0px !important;
+	border-right-width: 0px;
+}
+
 .wtrClassesTrainerItem{
 	float: left;
-	margin-right: 30px;
+	margin-right: 2%;
 	margin-bottom: 30px;
-	padding-right: 30px;
+	padding-right: 2%;
 	border-right-style: solid;
 	border-right-width: 1px;
+	width: 30.66%;
 }
 
 .wtrClassesTrainerItemDetails{

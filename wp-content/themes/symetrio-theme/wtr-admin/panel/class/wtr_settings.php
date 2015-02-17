@@ -158,10 +158,14 @@ if ( ! class_exists( 'WTR_Settings' ) ) {
 			global $post_settings;
 
 			$this->opt_a = get_option( self::WP_OPT_NAME );
+
 			// create options
 			if( empty( $this->opt_a ) ){
 				$this->update_options();
 			}
+			// format options
+			$this->format_options();
+
 			$post_settings = $this->opt_a;
 		}// end init_settings
 
@@ -171,6 +175,16 @@ if ( ! class_exists( 'WTR_Settings' ) ) {
 			$new_opt	= $this->create_options( $opt_a );
 			update_option( self::WP_OPT_NAME, $new_opt );
 		} // end update_options
+
+
+		public function format_options(){
+			if( is_array( $this->opt_a ) ) {
+				$new_opt		= base64_encode( serialize( $this->opt_a ) );
+				update_option( self::WP_OPT_NAME, $new_opt );
+				$this->opt_a	= $new_opt;
+			}
+			$this->opt_a  = unserialize( base64_decode( $this->opt_a ) );
+		} // end format_options
 
 
 		function create_options( $opt_a = array() ){
@@ -206,6 +220,8 @@ if ( ! class_exists( 'WTR_Settings' ) ) {
 					}
 				}
 			}
+
+			$new_opt_a	= base64_encode( serialize( $new_opt_a ) );
 			$this->opt_a = $new_opt_a;
 			return $new_opt_a;
 		}// end update_options
@@ -307,7 +323,7 @@ if ( ! class_exists( 'WTR_Settings' ) ) {
 		}// end get_WP_EXPORT_OPT_NAME
 
 
-		public function get_WP_CURRENT_VERSION(){
+		public static function get_WP_CURRENT_VERSION(){
 			return self::WP_CURRENT_VERSION;
 		}// end get_WP_CURRENT_VERSION
 

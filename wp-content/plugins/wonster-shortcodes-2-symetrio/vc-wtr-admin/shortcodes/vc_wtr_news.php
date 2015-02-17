@@ -395,7 +395,7 @@ class VCExtendAddonNews extends VCExtendAddonWtr{
 							$date				= get_the_time( $post_settings['wtr_BlogDateFormat']['all'] );
 							$author				= get_the_author_meta( 'display_name' );
 							$comments			= get_comments_number( $id );
-							$excerpt			= wtr_excerpt( ( integer ) $excerpt_length );
+							$excerpt			= wtr_excerpt( 300 );
 
 							$result .= '<li class="wtrShtLastNewsListStreamItem">';
 								$result .= '<article class="wtrShtLastNewsListItem clearfix">';

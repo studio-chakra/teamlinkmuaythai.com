@@ -672,6 +672,17 @@ $Architecture
   border-right: 1px solid #e5e5e5;
 }
 
+.WonButton.rateUs{
+  padding-left: 15px !important;
+  background-color: #CAF3DB;
+  color: #49976A;
+  border-color: #9AE9BC;
+}
+
+.WonButton.rateUs:hover{
+  background-color: #fff !important;
+  color: #49976A;
+}
 
 
 /*-- End architecture -----------------------*/

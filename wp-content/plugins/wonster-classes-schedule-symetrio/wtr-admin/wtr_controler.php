@@ -1119,6 +1119,13 @@ if ( ! class_exists( 'WTR_Classes_Schedule_Controler' ) ) {
 			}
 
 			ksort( $result, SORT_NUMERIC );
+
+			for( $i=0; $i < 7; $i++ ){
+				if( isset( $result_m[ $i ] ) ){
+					ksort( $result_m[ $i ], SORT_NUMERIC );
+				}
+			}
+
 			$calendar_data[ 'instance_public' ] = $result;
 			$calendar_data[ 'instance_public_mobile' ] = $result_m;
 			return $calendar_data;
@@ -1156,6 +1163,8 @@ if ( ! class_exists( 'WTR_Classes_Schedule_Controler' ) ) {
 			$direction		= htmlentities( strip_tags( $_POST[ 'direction' ] ) );
 			$day			= htmlentities( strip_tags( $_POST[ 'day' ] ) );
 			$modal			= htmlentities( strip_tags( $_POST[ 'modal' ] ) );
+			$show_level		= htmlentities( strip_tags( $_POST[ 'modal' ] ) );
+			$empty_hours		= htmlentities( strip_tags( $_POST[ 'hours' ] ) );
 
 			$day_n = date_create( $day );
 			if( 'prev' == $direction ){
@@ -1165,12 +1174,21 @@ if ( ! class_exists( 'WTR_Classes_Schedule_Controler' ) ) {
 			}
 			$day = date_format( $day_n, 'Y-m-d' );
 
+			if( !isset( $empty_hours ) ){
+				$empty_hours = 'no';
+			}
+
+			if( !isset( $show_level ) ){
+				$show_level = 'no';
+			}
+
+
 			$calendar_data	= self::$db_controler->get_calendar( $id_schedule );
 			$scope			= $this->get_scope_instance( $day );
 			$calendar_data	= self::$db_controler->get_calendar_full_data( $calendar_data, $scope );
 
 			$full_data		= $this->convert_std_schedule_to_hours_format( $calendar_data );
-			$html_data		= self::$view_controler->draw_calendar_in_public_table( $full_data, $modal );
+			$html_data		= self::$view_controler->draw_calendar_in_public_table( $full_data, $modal, $show_level, $empty_hours );
 			$respons		= array( 'html_data' => $html_data, 'scope' => $scope );
 
 			echo json_encode( $respons );

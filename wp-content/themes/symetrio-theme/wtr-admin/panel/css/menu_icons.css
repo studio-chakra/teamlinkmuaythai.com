@@ -19,3 +19,4 @@
 .wp-admin #wpwrap #adminmenu #menu-posts-product .menu-icon-post div.wp-menu-image:before { font-family: dashicons !important; content: "\f174" !important; font-size: 20px !important}
 #toplevel_page_wtr_classes_schedule .dashicons-admin-generic:before{ content: "\f469"; font-size: 22px; margin-top: -1px; margin-left: -1px;}
 #toplevel_page_wonster-options .dashicons-admin-generic:before{ content: "\f511"; }
+#wp-admin-bar-wtr_options .ab-item:before { content: '\f100'; top: 2px; }

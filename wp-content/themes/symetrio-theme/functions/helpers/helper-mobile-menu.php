@@ -36,8 +36,9 @@ if( ! function_exists( 'wtr_wp_nav_mobile_menu' ) ){
 			return;
 		}
 
-		$depth = apply_filters( 'wtr_wp_nav_menu_depth', 3 );
-		$args = array(
+		$search	= ( 1 == $post_settings['wtr_HeaderSearchStatus'] ) ? wtr_search_form( 'wtrMobileSearchInput wtrRadius2', 'wtrMobileSearchForm', false ) : '';
+		$depth	= apply_filters( 'wtr_wp_nav_menu_depth', 3 );
+		$args	= array(
 			'theme_location'	=> 'primary',
 			'menu'				=> $post_settings['wtr_page_nav_menu'],
 			'container'			=> 'nav',
@@ -52,15 +53,13 @@ if( ! function_exists( 'wtr_wp_nav_mobile_menu' ) ){
 			'after'				=> '',
 			'link_before'		=> '',
 			'link_after'		=> '',
-			'items_wrap'		=> '<div class="mp-level">'.  wtr_search_form( 'wtrMobileSearchInput wtrRadius2', 'wtrMobileSearchForm', false ). '<ul id="%1$s" class="%2$s">%3$s</ul></div>',
+			'items_wrap'		=> '<div class="mp-level">'. $search . '<ul id="%1$s" class="%2$s">%3$s</ul></div>',
 			'depth'				=> $depth,
 			'walker'			=> new WTR_Walker_Nav_Mobile_Menu,
 		);
 		wp_nav_menu( $args );
 	} // end wtr_wp_nav_mobile_menu
 }
-
-
 
 
 if( ! function_exists( 'wp_nav_menu_args_mobile_trigger' ) ){
@@ -76,8 +75,6 @@ if( ! function_exists( 'wp_nav_menu_args_mobile_trigger' ) ){
 	} // end wp_nav_menu_args_mobile_trigger
 }
 add_filter( 'wp_nav_menu_args', 'wp_nav_menu_args_mobile_trigger' );
-
-
 
 
 if( ! class_exists( 'WTR_Walker_Nav_Mobile_Menu' ) ) {

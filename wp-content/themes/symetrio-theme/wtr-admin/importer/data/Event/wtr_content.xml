@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--	contained in this file into your site. -->
 
-<!-- generator="WordPress/4.0.1" created="2014-12-02 13:31" -->
+<!-- generator="WordPress/4.1" created="2015-02-02 19:46" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>Symetrio - Event</title>
 	<link>http://themes.wonster.co/symetrio-event</link>
 	<description>Just another WordPress site</description>
-	<pubDate>Tue, 02 Dec 2014 13:31:30 +0000</pubDate>
+	<pubDate>Mon, 02 Feb 2015 19:46:11 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://themes.wonster.co/symetrio-event</wp:base_site_url>
@@ -43,7 +43,7 @@
 	<wp:term><wp:term_id>4</wp:term_id><wp:term_taxonomy>testimonial-category</wp:term_taxonomy><wp:term_slug>footer</wp:term_slug><wp:term_parent></wp:term_parent><wp:term_name><![CDATA[Footer]]></wp:term_name></wp:term>
 	<wp:term><wp:term_id>3</wp:term_id><wp:term_taxonomy>nav_menu</wp:term_taxonomy><wp:term_slug>menu-1</wp:term_slug><wp:term_name><![CDATA[Menu 1]]></wp:term_name></wp:term>
 
-	<generator>http://wordpress.org/?v=4.0.1</generator>
+	<generator>http://wordpress.org/?v=4.1</generator>
 
 	<item>
 				<title>wonster_rand_003</title>
@@ -100,7 +100,7 @@
 		<category domain="clients-category" nicename="color"><![CDATA[Color]]></category>
 		<wp:postmeta>
 			<wp:meta_key>_thumbnail_id</wp:meta_key>
-			<wp:meta_value><![CDATA[220]]></wp:meta_value>
+			<wp:meta_value><![CDATA[223]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_edit_last</wp:meta_key>
@@ -139,7 +139,7 @@
 		<category domain="clients-category" nicename="color"><![CDATA[Color]]></category>
 		<wp:postmeta>
 			<wp:meta_key>_thumbnail_id</wp:meta_key>
-			<wp:meta_value><![CDATA[219]]></wp:meta_value>
+			<wp:meta_value><![CDATA[223]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_edit_last</wp:meta_key>
@@ -178,7 +178,7 @@
 		<category domain="clients-category" nicename="color"><![CDATA[Color]]></category>
 		<wp:postmeta>
 			<wp:meta_key>_thumbnail_id</wp:meta_key>
-			<wp:meta_value><![CDATA[219]]></wp:meta_value>
+			<wp:meta_value><![CDATA[211]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_edit_last</wp:meta_key>
@@ -738,7 +738,7 @@ Marathon</span></h1>
 <div class="vc_custom_heading wpb_content_element vc_custom_1415353484552">
 <h2 style="text-align: center;"><span style="color: #ffffff;">Palmeris Rd</span></h2>
 </div>
-[/vc_column_text][vc_custom_heading text="Meta" font_container="tag:h3|font_size:22|text_align:center|color:rgba(255%2C255%2C255%2C0.5)|line_height:1.0" google_fonts="font_family:Droid%20Sans%3Aregular%2C700|font_style:400%20regular%3A400%3Anormal" css=".vc_custom_1415372287050{margin-top: -35px !important;margin-bottom: 0px !important;}"][/vc_column][/vc_row][vc_row row_type="full_width_grid" columns_type="wtrNoMargin" columns_autohight="wtrNoAutoHeightColumns" menu_above="wtrNoAboveMenuRow" bg_type="color" color_bg="#ffffff" img_attr="default" color_overlay_opt="off" color_overlay="rgba(31,206,109,0.6)" parallax="none" type_video="local" animate="none" delay="0" el_class="wtrDisplayNone"][vc_column width="1/1"][vc_empty_space height="0px"][vc_single_image image="211" alignment="center" border_color="grey" img_link_target="_self" img_size="full"][vc_empty_space height="20px"][vc_column_text animate="none" delay="0"]
+[/vc_column_text][vc_custom_heading text="Meta" font_container="tag:h3|font_size:22|text_align:center|color:rgba(255%2C255%2C255%2C0.5)|line_height:1.0" google_fonts="font_family:Droid%20Sans%3Aregular%2C700|font_style:400%20regular%3A400%3Anormal" css=".vc_custom_1415372287050{margin-top: -35px !important;margin-bottom: 0px !important;}"][/vc_column][/vc_row][vc_row row_type="full_width_grid" columns_type="wtrNoMargin" columns_autohight="wtrNoAutoHeightColumns" menu_above="wtrNoAboveMenuRow" bg_type="color" color_bg="#ffffff" img_attr="default" color_overlay_opt="off" color_overlay="rgba(31,206,109,0.6)" parallax="none" type_video="local" animate="none" delay="0" el_class="wtrDisplayNone"][vc_column width="1/1"][vc_empty_space height="0px"][vc_single_image image="223" alignment="center" border_color="grey" img_link_target="_self" img_size="full"][vc_empty_space height="20px"][vc_column_text animate="none" delay="0"]
 <h1 style="text-align: center; font-size: 36px;"><span style="color: #000000;">Distance: </span></h1>
 [/vc_column_text][vc_custom_heading text="42,192 M" font_container="tag:h3|font_size:26|text_align:center|color:%23999999|line_height:1.0" google_fonts="font_family:Droid%20Sans%3Aregular%2C700|font_style:400%20regular%3A400%3Anormal" css=".vc_custom_1415368735086{margin-top: -35px !important;margin-bottom: 0px !important;}"][vc_empty_space height="80px"][/vc_column][/vc_row][vc_row row_type="full_width" columns_type="wtrNoMargin" columns_autohight="wtrAutoHeightColumns" menu_above="wtrNoAboveMenuRow" bg_type="color" color_bg="#ffffff" img_attr="default" color_overlay_opt="off" color_overlay="rgba(31,206,109,0.6)" parallax="none" type_video="local" animate="none" delay="0"][vc_column width="1/1"][vc_wtr_google_maps type_map="ROADMAP" heading_map="0" pitch_map="0" style_map="standard" map="-37.88040479735691|144.83831839062498" height="560" zoom="12" scroll="0" zoom_control="0" type_control="0" address_control="1" click_to_go="1" disable_default_ui="1"][vc_wtr_google_maps_marker title_marker="e.g. Envato - PO Box 16122 Collins Street West" marker_style="my_own" own_marker_style="231" geo_marker="-37.83304948319598|144.6727430820465"][vc_wtr_google_maps_marker title_marker="e.g. Envato - PO Box 16122 Collins Street West" marker_style="my_own" own_marker_style="230" geo_marker="-37.89709938591007|144.66547966003418"][vc_wtr_google_maps_marker title_marker="e.g. Envato - PO Box 16122 Collins Street West" marker_style="my_own" own_marker_style="229" geo_marker="-37.84921204209774|144.82272148132324"][vc_wtr_google_maps_marker title_marker="e.g. Envato - PO Box 16122 Collins Street West" marker_style="my_own" own_marker_style="228" geo_marker="-37.83923498773259|144.7470188140869"][vc_wtr_google_maps_marker title_marker="e.g. Envato - PO Box 16122 Collins Street West" marker_style="my_own" own_marker_style="227" geo_marker="-37.919176151598336|144.75028038024902"][vc_wtr_google_maps_road desc="Road #1" color_line="#a5a5a5" weight_line="4" geo_road="-37.81751|144.959168" points="-37.839614572752176;144.7471046447754@-37.839614572752176;144.7471046447754@-37.83961;144.74706|-37.83945000000001;144.74709000000001|-37.83944;144.74697|-37.8393;144.74504000000002|-37.83926;144.74493|-37.837880000000006;144.72878|-37.837540000000004;144.7246|-37.83686;144.71654|-37.83619;144.70875|-37.835710000000006;144.70301|-37.83561;144.70164000000003|-37.83561;144.70079|-37.83552;144.69971@-37.835210000000004;144.69717|-37.835;144.69552000000002|-37.834810000000004;144.69396|-37.83473;144.69358000000003|-37.834410000000005;144.69098000000002|-37.83413;144.68885|-37.834140000000005;144.68862000000001|-37.833830000000006;144.68638|-37.83325;144.68209000000002|-37.832480000000004;144.67622|-37.83209;144.67328|-37.83209;144.67328|-37.832040000000006;144.67288000000002|-37.832300000000004;144.67282|-37.833400000000005;144.67257|-37.8342;144.67238|-37.83559;144.67212|-37.83572;144.67212|-37.835950000000004;144.67215000000002|-37.8361;144.67219|-37.83635;144.67229@-37.837300000000006;144.67273|-37.837700000000005;144.67289000000002|-37.837880000000006;144.67295000000001|-37.83822;144.67304000000001|-37.83859;144.67307000000002|-37.83903;144.67306000000002|-37.83932;144.67301|-37.8395;144.67298000000002|-37.83964;144.67292|-37.84013;144.67269000000002|-37.84047;144.67248|-37.840650000000004;144.67236|-37.840920000000004;144.67215000000002|-37.84141;144.67166|-37.84243;144.67065000000002|-37.84301;144.67027000000002|-37.84376;144.67004|-37.84539;144.66961@-37.845800000000004;144.6695|-37.84637;144.66940000000002|-37.8481;144.66914|-37.850060000000006;144.66885000000002|-37.8526;144.66844|-37.85481;144.66808@-37.85745;144.66761000000002|-37.86012;144.66714000000002|-37.86092;144.66696000000002|-37.862300000000005;144.66674|-37.86242;144.66672|-37.86247;144.66668|-37.863150000000005;144.66655|-37.86365;144.66631|-37.86372;144.66621@-37.86377;144.66619|-37.86383;144.66619|-37.863870000000006;144.66622|-37.8639;144.66625000000002|-37.864000000000004;144.66627000000003|-37.86419;144.66628|-37.86574;144.66604|-37.86686;144.66585|-37.867830000000005;144.66567|-37.868050000000004;144.66562000000002|-37.868300000000005;144.66552000000001|-37.86833;144.66548|-37.86838;144.66545000000002|-37.868460000000006;144.66545000000002|-37.868500000000004;144.6655|-37.86876;144.66547|-37.86992;144.66524|-37.87147;144.66499000000002|-37.871590000000005;144.66495|-37.87169;144.66489@-37.87172;144.66485|-37.87178;144.66482000000002|-37.87201;144.66486|-37.87252;144.66483000000002|-37.87276000000001;144.66481000000002|-37.873430000000006;144.66472000000002@-37.874010000000006;144.66464000000002|-37.87491;144.66447000000002|-37.875260000000004;144.66439000000003|-37.87536;144.66434|-37.87538;144.66430000000003|-37.875420000000005;144.66423|-37.8755;144.66418000000002|-37.87556;144.66417|-37.875620000000005;144.66420000000002|-37.87567000000001;144.66423@-37.87576;144.66427000000002|-37.87594;144.66430000000003|-37.87612;144.66426|-37.88105;144.66340000000002|-37.88257;144.66312000000002|-37.88346000000001;144.66301|-37.884040000000006;144.6629|-37.88467;144.6628|-37.885490000000004;144.66267000000002|-37.88566;144.66264|-37.885670000000005;144.66276000000002|-37.88646;144.66261|-37.88692;144.66253|-37.88842;144.66229|-37.888980000000004;144.6622|-37.889410000000005;144.6621@-37.88994;144.66202|-37.889990000000004;144.66205000000002|-37.89005;144.66205000000002|-37.890100000000004;144.66199|-37.89043;144.66185000000002|-37.89162;144.66165|-37.89213;144.66162|-37.89228000000001;144.66162|-37.892430000000004;144.66167000000002|-37.892610000000005;144.66175|-37.89276;144.66185000000002|-37.893260000000005;144.66232000000002|-37.89618;144.66506|-37.89699;144.66582000000002|-37.89697;144.66586|-37.896980000000006;144.66594|-37.89701;144.66598000000002|-37.89688;144.66629|-37.89688;144.66629|-37.89701;144.66598000000002|-37.897040000000004;144.66599000000002|-37.8971;144.66598000000002|-37.89714;144.66591000000003|-37.89712;144.66582000000002|-37.897110000000005;144.66580000000002|-37.8975;144.66477@-37.897710000000004;144.66427000000002|-37.89781;144.66396|-37.897940000000006;144.66364000000002|-37.898010000000006;144.66357000000002|-37.89808;144.66344|-37.898320000000005;144.66325|-37.89853;144.66324|-37.89865;144.66333|-37.89943;144.66387|-37.899640000000005;144.66406|-37.899710000000006;144.66417|-37.89974;144.66422|-37.89978;144.66426|-37.89996;144.6647|-37.90014;144.6653|-37.90028;144.66585|-37.900310000000005;144.66590000000002|-37.90034;144.66594|-37.900360000000006;144.66611|-37.90037;144.6662|-37.900330000000004;144.66651000000002|-37.90026;144.66665|-37.90007000000001;144.66705000000002|-37.90023;144.66715000000002|-37.900360000000006;144.66718|-37.90048;144.66719|-37.90075;144.66713000000001|-37.90133;144.66704000000001@-37.901810000000005;144.66692|-37.901970000000006;144.66691|-37.902100000000004;144.66697000000002|-37.9022;144.66708|-37.902460000000005;144.66759000000002|-37.90346;144.66943|-37.90744;144.67687|-37.907920000000004;144.67775|-37.90825;144.67769|-37.908860000000004;144.67755000000002|-37.909580000000005;144.6774|-37.909780000000005;144.67737000000002|-37.90999;144.67778|-37.91017;144.67807000000002|-37.910230000000006;144.6781|-37.91044;144.67843000000002|-37.9108;144.6791|-37.91125;144.67997000000003|-37.91136;144.68018|-37.911390000000004;144.68029|-37.91156;144.68061|-37.911950000000004;144.68136|-37.91221;144.68182000000002|-37.91226;144.68188|-37.91239;144.68212000000003|-37.912980000000005;144.68319000000002|-37.91319;144.68359|-37.91364;144.68449|-37.914440000000006;144.686|-37.916000000000004;144.68890000000002|-37.91814;144.69292000000002|-37.91912000000001;144.69474000000002|-37.919560000000004;144.69553000000002|-37.92099;144.69824@-37.92278;144.70157|-37.92302;144.70193|-37.923280000000005;144.70223000000001|-37.923280000000005;144.70223000000001|-37.92374;144.70262000000002|-37.924310000000006;144.70287000000002|-37.92568;144.70342000000002|-37.926860000000005;144.70389|-37.926970000000004;144.70408|-37.927;144.70417|-37.927;144.70444|-37.926660000000005;144.70564000000002|-37.92535;144.71094000000002|-37.92528;144.71131000000003|-37.92521;144.71174000000002|-37.92519;144.71205|-37.92519;144.71239|-37.92522;144.71272000000002|-37.92622;144.72078000000002|-37.927020000000006;144.72791|-37.92705;144.72836|-37.92723;144.72981000000001|-37.92822;144.73855|-37.928490000000004;144.74127000000001|-37.928490000000004;144.74127000000001|-37.92844;144.7416|-37.92833;144.74190000000002|-37.92819;144.74216|-37.92803;144.74237000000002|-37.92788;144.74252|-37.927760000000006;144.74261|-37.92747;144.74275|-37.927080000000004;144.74283|-37.92396;144.74339|-37.92385;144.74341|-37.92353000000001;144.74363000000002|-37.923280000000005;144.74385|-37.923080000000006;144.74414000000002|-37.922880000000006;144.74452000000002|-37.922790000000006;144.74485|-37.922720000000005;144.74525|-37.922810000000005;144.74613000000002|-37.92293;144.74744|-37.922940000000004;144.74782000000002|-37.92291;144.74811000000003|-37.922850000000004;144.74838000000003|-37.922790000000006;144.74863000000002|-37.92266;144.74890000000002|-37.92235;144.74934000000002|-37.92211;144.74956|-37.92195;144.74967|-37.921760000000006;144.74972000000002|-37.919380000000004;144.75015000000002|-37.91713;144.75054|-37.914300000000004;144.75104000000002|-37.90982;144.75182|-37.907360000000004;144.75226|-37.906200000000005;144.75244|-37.904770000000006;144.75272|-37.90288;144.75304|-37.90063;144.75348000000002|-37.89833;144.75390000000002|-37.89799;144.75395|-37.89795;144.75392000000002|-37.897850000000005;144.75392000000002|-37.897690000000004;144.75394|-37.89748;144.75394|-37.89719;144.75398|-37.896910000000005;144.75401000000002|-37.896890000000006;144.75396|-37.896840000000005;144.75392000000002@-37.896770000000004;144.75389|-37.89669000000001;144.75390000000002|-37.89663;144.75393000000003|-37.89659;144.75396|-37.896570000000004;144.75399000000002|-37.89616;144.75414|-37.89551;144.75429000000003|-37.894310000000004;144.75457|-37.89426;144.75464000000002|-37.89423;144.75465|-37.8937;144.75476|-37.892120000000006;144.75508000000002|-37.891400000000004;144.75521|-37.88978;144.75552000000002|-37.8892;144.75562000000002|-37.88824;144.75574|-37.888160000000006;144.75582|-37.887260000000005;144.75594|-37.88693;144.756|-37.88613;144.75609|-37.886070000000004;144.75606000000002|-37.88597;144.75608000000003|-37.885250000000006;144.75628|-37.884240000000005;144.75655|-37.883790000000005;144.75664|-37.88306;144.75677000000002|-37.8827;144.75678000000002|-37.882690000000004;144.75676|-37.88268;144.75674|-37.88266;144.75672|-37.88262;144.75670000000002|-37.88253;144.75674|-37.8825;144.75678000000002|-37.882290000000005;144.75688000000002|-37.88168;144.75702|-37.880570000000006;144.75722000000002|-37.87926;144.75746|-37.87778;144.75773|-37.87727;144.75784000000002|-37.876720000000006;144.75793000000002|-37.87556;144.75816|-37.875260000000004;144.75822000000002|-37.8751;144.75833|-37.87509;144.75834|-37.875080000000004;144.75836|-37.875060000000005;144.75839000000002|-37.87501;144.75840000000002|-37.87496;144.75838000000002|-37.874950000000005;144.75837@-37.87467;144.75848000000002|-37.87425;144.75876000000002|-37.873560000000005;144.75918000000001|-37.87306;144.75946000000002|-37.87266;144.75965000000002|-37.87228;144.75977|-37.871660000000006;144.75990000000002|-37.870960000000004;144.75999000000002|-37.87088;144.75998|-37.870610000000006;144.75996|-37.870610000000006;144.75994|-37.87059;144.75991000000002|-37.870560000000005;144.75988|-37.870490000000004;144.75986|-37.870430000000006;144.75988|-37.870380000000004;144.75993000000003|-37.87037;144.75995|-37.87017;144.76001000000002|-37.870090000000005;144.76005|-37.86977;144.76006|-37.869040000000005;144.76008000000002|-37.868610000000004;144.76010000000002|-37.86789;144.76011000000003|-37.867700000000006;144.76013|-37.867470000000004;144.76017000000002|-37.86739;144.76016|-37.867360000000005;144.76018000000002|-37.86732000000001;144.76019000000002|-37.866980000000005;144.76149|-37.866960000000006;144.76157|-37.866980000000005;144.76158|-37.86701;144.76167|-37.86701;144.76172000000003|-37.86694;144.76181000000003|-37.86692;144.76182|-37.86686;144.76214000000002|-37.86681;144.76222|-37.866260000000004;144.76444|-37.865610000000004;144.76694|-37.864470000000004;144.77144|-37.86413;144.77283|-37.863850000000006;144.77391|-37.86383;144.77391|-37.863820000000004;144.77391|-37.86379;144.77393|-37.86377;144.77397000000002|-37.863780000000006;144.77405000000002|-37.86381;144.77408|-37.863580000000006;144.77503000000002|-37.863150000000005;144.77666000000002|-37.863080000000004;144.77692000000002|-37.862930000000006;144.77752|-37.86262;144.77856|-37.86256;144.7786|-37.86254;144.77867|-37.86256;144.77874|-37.86251;144.77911|-37.862460000000006;144.77932|-37.862410000000004;144.77943000000002|-37.86229;144.77948|-37.86222;144.77948|-37.861630000000005;144.77928|-37.86150000000001;144.77925000000002|-37.861200000000004;144.77924000000002|-37.859930000000006;144.77925000000002|-37.85902;144.77925000000002|-37.85848;144.7793|-37.85338;144.78018|-37.85089;144.78061000000002|-37.8508;144.78067000000001|-37.850750000000005;144.7808|-37.85079;144.78124000000003|-37.85119;144.78483|-37.851290000000006;144.78580000000002|-37.851420000000005;144.78695000000002|-37.85141;144.78707|-37.851490000000005;144.78808|-37.85164;144.78939000000003|-37.851440000000004;144.78945000000002|-37.850440000000006;144.78968|-37.85038;144.78973000000002|-37.850300000000004;144.78975|-37.84919;144.78997|-37.849120000000006;144.79003|-37.84803;144.79023|-37.8479;144.79026000000002|-37.847150000000006;144.79038|-37.846180000000004;144.79054000000002|-37.845060000000004;144.79074|-37.845150000000004;144.79158|-37.845290000000006;144.79298|-37.84534;144.79352|-37.845490000000005;144.79497|-37.84592;144.79917|-37.846070000000005;144.80047000000002|-37.84628;144.80165000000002|-37.846540000000005;144.80305|-37.846680000000006;144.80413000000001|-37.847280000000005;144.80899000000002|-37.84749;144.81092|-37.84807;144.81576|-37.84819;144.81663|-37.848290000000006;144.81766000000002|-37.84846;144.81916|-37.84874000000001;144.82157|-37.84881;144.82228|-37.848870000000005;144.82249000000002|-37.848890000000004;144.82260000000002|-37.84888;144.82267000000002|-37.84882;144.82276000000002|-37.8487;144.82279|-37.848670000000006;144.82278000000002|-37.84868;144.82286000000002|-37.848710000000004;144.82299|-37.84877;144.82338000000001|-37.84879;144.82362"][vc_wtr_google_maps_contener align="right"]
 <h2><span style="color: #000000;">Legend</span></h2>
@@ -751,7 +751,7 @@ I am text block. Click edit button to change this text.
 [vc_wtr_custom_list animate="none"][vc_wtr_custom_list_item color_icon="#ffffff" color_background="#ffc234" type_icon="web|fa fa-map-marker"]Start point[/vc_wtr_custom_list_item][vc_wtr_custom_list_item color_icon="#333333" color_background="#f5f5f5" type_icon="web|fa fa-info"]Information point[/vc_wtr_custom_list_item][vc_wtr_custom_list_item color_icon="#333333" color_background="#f5f5f5" type_icon="web|fa fa-plus"]Help point[/vc_wtr_custom_list_item][vc_wtr_custom_list_item color_icon="#333333" color_background="#f5f5f5" type_icon="web|fa fa-life-bouy"]Second help point[/vc_wtr_custom_list_item][vc_wtr_custom_list_item color_icon="#ffffff" color_background="#444444" type_icon="web|fa fa-map-marker"]Meta point[/vc_wtr_custom_list_item][/vc_wtr_custom_list][/vc_wtr_google_maps_contener][/vc_wtr_google_maps][/vc_column][/vc_row][vc_row row_type="full_width" columns_type="wtrNoMargin" columns_autohight="wtrNoAutoHeightColumns" menu_above="wtrNoAboveMenuRow" bg_type="color" color_bg="#ffffff" img_attr="default" color_overlay_opt="off" color_overlay="rgba(31,206,109,0.6)" parallax="none" type_video="local" animate="none" delay="0"][vc_column width="1/1"][vc_empty_space height="80"][/vc_column][/vc_row][vc_row row_type="full_width_grid" columns_type="wtrNoMargin" columns_autohight="wtrNoAutoHeightColumns" menu_above="wtrNoAboveMenuRow" bg_type="color" color_bg="#ffffff" img_attr="default" color_overlay_opt="off" color_overlay="rgba(31,206,109,0.6)" parallax="none" type_video="local" animate="none" delay="0"][vc_column width="1/1"][vc_column_text animate="none" delay="0"]
 <h1 style="text-align: center; font-size: 36px;"><span style="color: #000000;">MAIN INFO
 </span></h1>
-[/vc_column_text][vc_custom_heading text="join us and realize your dreams" font_container="tag:h3|font_size:26|text_align:center|color:%23999999|line_height:1.0" google_fonts="font_family:Droid%20Sans%3Aregular%2C700|font_style:400%20regular%3A400%3Anormal" css=".vc_custom_1415385652486{margin-top: -35px !important;margin-bottom: 0px !important;}"][vc_empty_space height="80"][/vc_column][/vc_row][vc_row row_type="full_width_grid" columns_type="wtrNoMargin" columns_autohight="wtrNoAutoHeightColumns" menu_above="wtrNoAboveMenuRow" bg_type="color" color_bg="#ffffff" img_attr="default" color_overlay_opt="off" color_overlay="rgba(31,206,109,0.6)" parallax="none" type_video="local" animate="none" delay="0"][vc_column width="1/2"][vc_wtr_hover_box img_1="219" img_2="211" animate="none" delay="0"][/vc_column][vc_column width="1/2" type_bg="solid" color_bg="#181920" img_attr="default" corner="wtrNoRoundedCornersColumn" animate="none" delay="0"][vc_wtr_hover_box img_1="211" img_2="221" animate="none" delay="0"][/vc_column][/vc_row][vc_row row_type="full_width_grid" columns_type="wtrMargin" columns_autohight="wtrNoAutoHeightColumns" bg_type="color" color_bg="#ffffff" img_attr="default" color_overlay_opt="off" color_overlay="rgba(31,206,109,0.6)" parallax="none" type_video="local" animate="none" delay="0" menu_above="wtrNoAboveMenuRow"][vc_column width="1/1" type_bg="transparent" color_bg="#ffc234" img_attr="default" corner="wtrNoRoundedCornersColumn" animate="none" delay="0"][vc_empty_space height="90px"][vc_column_text animate="none" delay="0"]
+[/vc_column_text][vc_custom_heading text="join us and realize your dreams" font_container="tag:h3|font_size:26|text_align:center|color:%23999999|line_height:1.0" google_fonts="font_family:Droid%20Sans%3Aregular%2C700|font_style:400%20regular%3A400%3Anormal" css=".vc_custom_1415385652486{margin-top: -35px !important;margin-bottom: 0px !important;}"][vc_empty_space height="80"][/vc_column][/vc_row][vc_row row_type="full_width_grid" columns_type="wtrNoMargin" columns_autohight="wtrNoAutoHeightColumns" menu_above="wtrNoAboveMenuRow" bg_type="color" color_bg="#ffffff" img_attr="default" color_overlay_opt="off" color_overlay="rgba(31,206,109,0.6)" parallax="none" type_video="local" animate="none" delay="0"][vc_column width="1/2"][vc_wtr_hover_box img_1="223" img_2="213" animate="none" delay="0"][/vc_column][vc_column width="1/2" type_bg="solid" color_bg="#181920" img_attr="default" corner="wtrNoRoundedCornersColumn" animate="none" delay="0"][vc_wtr_hover_box img_1="215" img_2="222" animate="none" delay="0"][/vc_column][/vc_row][vc_row row_type="full_width_grid" columns_type="wtrMargin" columns_autohight="wtrNoAutoHeightColumns" bg_type="color" color_bg="#ffffff" img_attr="default" color_overlay_opt="off" color_overlay="rgba(31,206,109,0.6)" parallax="none" type_video="local" animate="none" delay="0" menu_above="wtrNoAboveMenuRow"][vc_column width="1/1" type_bg="transparent" color_bg="#ffc234" img_attr="default" corner="wtrNoRoundedCornersColumn" animate="none" delay="0"][vc_empty_space height="90px"][vc_column_text animate="none" delay="0"]
 <h1 style="text-align: center; font-size: 36px;"><span style="color: #000000;">LAST YEAR
 </span></h1>
 [/vc_column_text][vc_custom_heading text="we all did awesome job" font_container="tag:h3|font_size:26|text_align:center|color:%23999999|line_height:1.0" google_fonts="font_family:Droid%20Sans%3Aregular%2C700|font_style:400%20regular%3A400%3Anormal" css=".vc_custom_1415364510492{margin-top: -35px !important;margin-bottom: 0px !important;}"][vc_empty_space height="80px"][vc_row_inner][vc_column_inner width="1/4" type_bg="solid" color_bg="#333333" img_attr="default" corner="wtrRoundedCornersColumn" animate="none" delay="0"][vc_empty_space height="20px"][vc_wtr_counter_numeric version="wtrShtCounterLight" easing="true" value="1482" speed="10" color_font="#1fce6d" color_border="#e5e5e5"][vc_empty_space height="20px"][vc_wtr_divider type="line" divider_align="left" height="1" width_p="100" width_q="10" color_line="rgba(255,255,255,0.2)" color_element="#1fce6d" color_icon="#1fce6d" icon_align="left" icon="web|fa fa-check" animate="none" delay="0"][vc_empty_space height="40px"][vc_column_text animate="none" delay="0"]
@@ -762,7 +762,7 @@ I am text block. Click edit button to change this text.
 <h3 style="text-align: center;"><span style="color: #ffc234;">HUGS</span></h3>
 [/vc_column_text][vc_custom_heading text="On finish" font_container="tag:h2|font_size:26px|text_align:center|color:%23ffffff|line_height:1.0" google_fonts="font_family:Dosis%3A200%2C300%2Cregular%2C500%2C600%2C700%2C800|font_style:600%20bold%20regular%3A600%3Anormal" css=".vc_custom_1415364016912{margin-top: -30px !important;margin-bottom: 0px !important;}"][vc_empty_space height="40px"][/vc_column_inner][vc_column_inner width="1/4" type_bg="solid" color_bg="#ffc234" img_attr="default" corner="wtrRoundedCornersColumn" animate="none" delay="0"][vc_empty_space height="20px"][vc_wtr_counter_numeric version="wtrShtCounterLight" easing="true" value="1029" speed="10" color_font="#1fce6d" color_border="#e5e5e5"][vc_empty_space height="20px"][vc_wtr_divider type="line" divider_align="left" height="1" width_p="100" width_q="10" color_line="rgba(255,255,255,0.3)" color_element="#1fce6d" color_icon="#1fce6d" icon_align="left" icon="web|fa fa-check" animate="none" delay="0"][vc_empty_space height="40px"][vc_column_text animate="none" delay="0"]
 <h3 style="text-align: center;"><span style="color: #000000;">PEOPLE</span></h3>
-[/vc_column_text][vc_custom_heading text="Started" font_container="tag:h2|font_size:26px|text_align:center|color:%23ffffff|line_height:1.0" google_fonts="font_family:Dosis%3A200%2C300%2Cregular%2C500%2C600%2C700%2C800|font_style:600%20bold%20regular%3A600%3Anormal" css=".vc_custom_1415363918963{margin-top: -30px !important;margin-bottom: 0px !important;}"][vc_empty_space height="40px"][/vc_column_inner][/vc_row_inner][vc_empty_space height="80px"][/vc_column][/vc_row][vc_row row_type="full_width" columns_type="wtrNoMargin" columns_autohight="wtrNoAutoHeightColumns" menu_above="wtrNoAboveMenuRow" bg_type="color" color_bg="#ffffff" img_attr="default" color_overlay_opt="off" color_overlay="rgba(31,206,109,0.6)" parallax="none" type_video="local" animate="none" delay="0"][vc_column width="1/1"][vc_wtr_gallery type="metro" id_gallery="123" animate="none" delay="0"][/vc_column][/vc_row][vc_row row_type="full_width" columns_type="wtrNoMargin" columns_autohight="wtrNoAutoHeightColumns" menu_above="wtrNoAboveMenuRow" bg_type="color" color_bg="#ffffff" img_attr="default" color_overlay_opt="off" color_overlay="rgba(31,206,109,0.6)" parallax="none" type_video="local" animate="none" delay="0"][vc_column width="1/1"][vc_empty_space height="80px"][vc_wtr_button url="url:http%3A%2F%2Fthemes.wonster.co%2Fsymetrio-event%2Fsign-in%2F|title:Sign%20in|" label="Sign me in" align="center" size="big" color="c_black" corner="wtrButtonRad" background="wtrButtonNoTrans" animate_icon="wtrButtonHoverAnim" full_width="wtrButtonNoFullWidth" margin_left="0" margin_right="0" margin_top="0" animate="none" delay="0"][vc_empty_space height="80px"][/vc_column][/vc_row][vc_row row_type="full_width_grid" columns_type="wtrNoMargin" columns_autohight="wtrNoAutoHeightColumns" menu_above="wtrNoAboveMenuRow" bg_type="image" color_bg="#333333" img_attr="cover" color_overlay_opt="off" color_overlay="rgba(31,206,109,0.6)" parallax="none" type_video="local" animate="none" delay="0" img="212"][vc_column width="1/1"][vc_empty_space height="80px"][vc_column_text animate="none" delay="0"]
+[/vc_column_text][vc_custom_heading text="Started" font_container="tag:h2|font_size:26px|text_align:center|color:%23ffffff|line_height:1.0" google_fonts="font_family:Dosis%3A200%2C300%2Cregular%2C500%2C600%2C700%2C800|font_style:600%20bold%20regular%3A600%3Anormal" css=".vc_custom_1415363918963{margin-top: -30px !important;margin-bottom: 0px !important;}"][vc_empty_space height="40px"][/vc_column_inner][/vc_row_inner][vc_empty_space height="80px"][/vc_column][/vc_row][vc_row row_type="full_width" columns_type="wtrNoMargin" columns_autohight="wtrNoAutoHeightColumns" menu_above="wtrNoAboveMenuRow" bg_type="color" color_bg="#ffffff" img_attr="default" color_overlay_opt="off" color_overlay="rgba(31,206,109,0.6)" parallax="none" type_video="local" animate="none" delay="0"][vc_column width="1/1"][vc_wtr_gallery type="metro" id_gallery="123" animate="none" delay="0"][/vc_column][/vc_row][vc_row row_type="full_width" columns_type="wtrNoMargin" columns_autohight="wtrNoAutoHeightColumns" menu_above="wtrNoAboveMenuRow" bg_type="color" color_bg="#ffffff" img_attr="default" color_overlay_opt="off" color_overlay="rgba(31,206,109,0.6)" parallax="none" type_video="local" animate="none" delay="0"][vc_column width="1/1"][vc_empty_space height="80px"][vc_wtr_button url="url:http%3A%2F%2Fthemes.wonster.co%2Fsymetrio-event%2Fsign-in%2F|title:Sign%20in|" label="Sign me in" align="center" size="big" color="c_black" corner="wtrButtonRad" background="wtrButtonNoTrans" animate_icon="wtrButtonHoverAnim" full_width="wtrButtonNoFullWidth" margin_left="0" margin_right="0" margin_top="0" animate="none" delay="0"][vc_empty_space height="80px"][/vc_column][/vc_row][vc_row row_type="full_width_grid" columns_type="wtrNoMargin" columns_autohight="wtrNoAutoHeightColumns" menu_above="wtrNoAboveMenuRow" bg_type="image" color_bg="#333333" img_attr="cover" color_overlay_opt="off" color_overlay="rgba(31,206,109,0.6)" parallax="none" type_video="local" animate="none" delay="0" img="219"][vc_column width="1/1"][vc_empty_space height="80px"][vc_column_text animate="none" delay="0"]
 <h1 style="text-align: center; font-size: 36px;"><span style="color: #ffffff;">OUR PARTNERS
 </span></h1>
 [/vc_column_text][vc_custom_heading text="Cooperate and support us in our mission" font_container="tag:h3|font_size:26|text_align:center|color:%23999999|line_height:1.0" google_fonts="font_family:Droid%20Sans%3Aregular%2C700|font_style:400%20regular%3A400%3Anormal" css=".vc_custom_1415365060923{margin-top: -35px !important;margin-bottom: 0px !important;}"][vc_empty_space height="80px"][vc_wtr_clients type="boxed" controls=" " interval="4000" version="wtrShtClientsStandard" category="color" order="title_asc" limit="10" animate="none" delay="0"][vc_empty_space height="80px"][/vc_column][/vc_row]]]></content:encoded>
@@ -895,7 +895,7 @@ your subscriptions to all of our events." font_container="tag:h2|font_size:20|te
 <h2 style="font-size: 26px;"><span style="color: #ffffff;">If you need more information, please contact us directly</span></h2>
 [/vc_column_text][vc_column_text animate="none" delay="0"]<span style="color: #999999;">Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor.</span>[/vc_column_text][vc_column_text animate="none" delay="0"]
 <h2 style="font-size: 26px;"><span style="color: #ffffff;">+61 3 8376 6284</span></h2>
-[/vc_column_text][vc_column_text animate="none" delay="0"]<span style="color: #999999;">Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</span>[/vc_column_text][vc_row_inner][vc_column_inner width="1/1" type_bg="solid" color_bg="#ffc234" img_attr="default" corner="wtrRoundedCornersColumn" animate="none" delay="0" css=".vc_custom_1415313844884{padding: 30px !important;}"][vc_custom_heading text="42,195 KM" font_container="tag:h2|font_size:26|text_align:left|color:%23ffffff|line_height:1.0" google_fonts="font_family:Montserrat%3Aregular%2C700|font_style:700%20bold%20regular%3A700%3Anormal"][vc_custom_heading text="IN THE MOST
+[/vc_column_text][vc_column_text animate="none" delay="0"]<span style="color: #999999;">Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</span>[/vc_column_text][vc_row_inner][vc_column_inner width="1/1" type_bg="solid" color_bg="#ffc234" img_attr="default" corner="wtrRoundedCornersColumn" animate="none" delay="0" css=".vc_custom_1415313844884{padding: 30px !important;}"][vc_custom_heading text="42,195 KM" font_container="tag:h2|font_size:26|text_align:left|color:%23ffffff|line_height:1.0" google_fonts="font_family:Montserrat%3Aregular%2C700|font_style:700%20bold%20regular%3A700%3Anormal" css=".vc_custom_1422885978802{margin-bottom: 30px !important;}"][vc_custom_heading text="IN THE MOST
 BEAUTYFUL
 CITY IN THE
 WORLD" font_container="tag:h2|font_size:20|text_align:left|color:%23020202|line_height:1.0" google_fonts="font_family:Montserrat%3Aregular%2C700|font_style:700%20bold%20regular%3A700%3Anormal"][/vc_column_inner][/vc_row_inner][/vc_column][/vc_row]]]></content:encoded>
@@ -1002,7 +1002,11 @@ WORLD" font_container="tag:h2|font_size:20|text_align:left|color:%23020202|line_
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_wpb_shortcodes_custom_css</wp:meta_key>
-			<wp:meta_value><![CDATA[.vc_custom_1415461019425{padding: 40px !important;}.vc_custom_1415379483384{margin-top: 0px !important;margin-bottom: 0px !important;}.vc_custom_1415313844884{padding: 30px !important;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[.vc_custom_1415461019425{padding: 40px !important;}.vc_custom_1415379483384{margin-top: 0px !important;margin-bottom: 0px !important;}.vc_custom_1415313844884{padding: 30px !important;}.vc_custom_1422885978802{margin-bottom: 30px !important;}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_vc_post_settings</wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{s:7:"vc_grid";a:0:{}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -1021,7 +1025,7 @@ WORLD" font_container="tag:h2|font_size:20|text_align:left|color:%23020202|line_
 <h2 style="font-size: 26px;"><span style="color: #ffffff;">If you need more information, please contact us directly</span></h2>
 [/vc_column_text][vc_column_text animate="none" delay="0"]<span style="color: #999999;">Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor.</span>[/vc_column_text][vc_column_text animate="none" delay="0"]
 <h2 style="font-size: 26px;"><span style="color: #ffffff;">+61 3 8376 6284</span></h2>
-[/vc_column_text][vc_column_text animate="none" delay="0"]<span style="color: #999999;">Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</span>[/vc_column_text][vc_row_inner][vc_column_inner width="1/1" type_bg="solid" color_bg="#ffc234" img_attr="default" corner="wtrRoundedCornersColumn" animate="none" delay="0" css=".vc_custom_1415313844884{padding: 30px !important;}"][vc_custom_heading text="42,195 KM" font_container="tag:h2|font_size:26|text_align:left|color:%23ffffff|line_height:1.0" google_fonts="font_family:Montserrat%3Aregular%2C700|font_style:700%20bold%20regular%3A700%3Anormal"][vc_custom_heading text="IN THE MOST
+[/vc_column_text][vc_column_text animate="none" delay="0"]<span style="color: #999999;">Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</span>[/vc_column_text][vc_row_inner][vc_column_inner width="1/1" type_bg="solid" color_bg="#ffc234" img_attr="default" corner="wtrRoundedCornersColumn" animate="none" delay="0" css=".vc_custom_1415313844884{padding: 30px !important;}"][vc_custom_heading text="42,195 KM" font_container="tag:h2|font_size:26|text_align:left|color:%23ffffff|line_height:1.0" google_fonts="font_family:Montserrat%3Aregular%2C700|font_style:700%20bold%20regular%3A700%3Anormal" css=".vc_custom_1422886022316{margin-bottom: 30px !important;}"][vc_custom_heading text="IN THE MOST
 BEAUTYFUL
 CITY IN THE
 WORLD" font_container="tag:h2|font_size:20|text_align:left|color:%23020202|line_height:1.0" google_fonts="font_family:Montserrat%3Aregular%2C700|font_style:700%20bold%20regular%3A700%3Anormal"][/vc_column_inner][/vc_row_inner][/vc_column][/vc_row]]]></content:encoded>
@@ -1128,7 +1132,11 @@ WORLD" font_container="tag:h2|font_size:20|text_align:left|color:%23020202|line_
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_wpb_shortcodes_custom_css</wp:meta_key>
-			<wp:meta_value><![CDATA[.vc_custom_1415460622086{padding: 40px !important;}.vc_custom_1415313844884{padding: 30px !important;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[.vc_custom_1415460622086{padding: 40px !important;}.vc_custom_1415313844884{padding: 30px !important;}.vc_custom_1422886022316{margin-bottom: 30px !important;}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_vc_post_settings</wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{s:7:"vc_grid";a:0:{}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -1396,7 +1404,7 @@ Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus.[/vc_c
 <h2 style="font-size: 26px;"><span style="color: #ffffff;">If you need more information, please contact us directly</span></h2>
 [/vc_column_text][vc_column_text animate="none" delay="0"]<span style="color: #999999;">Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor.</span>[/vc_column_text][vc_column_text animate="none" delay="0"]
 <h2 style="font-size: 26px;"><span style="color: #ffffff;">+61 3 8376 6284</span></h2>
-[/vc_column_text][vc_column_text animate="none" delay="0"]<span style="color: #999999;">Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</span>[/vc_column_text][vc_row_inner][vc_column_inner width="1/1" type_bg="solid" color_bg="#ffc234" img_attr="default" corner="wtrRoundedCornersColumn" animate="none" delay="0" css=".vc_custom_1415313844884{padding: 30px !important;}"][vc_custom_heading text="42,195 KM" font_container="tag:h2|font_size:26|text_align:left|color:%23ffffff|line_height:1.0" google_fonts="font_family:Montserrat%3Aregular%2C700|font_style:700%20bold%20regular%3A700%3Anormal"][vc_custom_heading text="IN THE MOST
+[/vc_column_text][vc_column_text animate="none" delay="0"]<span style="color: #999999;">Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</span>[/vc_column_text][vc_row_inner][vc_column_inner width="1/1" type_bg="solid" color_bg="#ffc234" img_attr="default" corner="wtrRoundedCornersColumn" animate="none" delay="0" css=".vc_custom_1415313844884{padding: 30px !important;}"][vc_custom_heading text="42,195 KM" font_container="tag:h2|font_size:26|text_align:left|color:%23ffffff|line_height:1.0" google_fonts="font_family:Montserrat%3Aregular%2C700|font_style:700%20bold%20regular%3A700%3Anormal" css=".vc_custom_1422885997715{margin-bottom: 30px !important;}"][vc_custom_heading text="IN THE MOST
 BEAUTYFUL
 CITY IN THE
 WORLD" font_container="tag:h2|font_size:20|text_align:left|color:%23020202|line_height:1.0" google_fonts="font_family:Montserrat%3Aregular%2C700|font_style:700%20bold%20regular%3A700%3Anormal"][/vc_column_inner][/vc_row_inner][/vc_column][/vc_row]]]></content:encoded>
@@ -1503,7 +1511,11 @@ WORLD" font_container="tag:h2|font_size:20|text_align:left|color:%23020202|line_
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_wpb_shortcodes_custom_css</wp:meta_key>
-			<wp:meta_value><![CDATA[.vc_custom_1415461019425{padding: 40px !important;}.vc_custom_1415313844884{padding: 30px !important;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[.vc_custom_1415461019425{padding: 40px !important;}.vc_custom_1415313844884{padding: 30px !important;}.vc_custom_1422885997715{margin-bottom: 30px !important;}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_vc_post_settings</wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{s:7:"vc_grid";a:0:{}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -1894,7 +1906,7 @@ WORLD" font_container="tag:h2|font_size:20|text_align:left|color:%23020202|line_
 		<category domain="clients-category" nicename="color"><![CDATA[Color]]></category>
 		<wp:postmeta>
 			<wp:meta_key>_thumbnail_id</wp:meta_key>
-			<wp:meta_value><![CDATA[214]]></wp:meta_value>
+			<wp:meta_value><![CDATA[212]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_edit_last</wp:meta_key>
@@ -1933,7 +1945,7 @@ WORLD" font_container="tag:h2|font_size:20|text_align:left|color:%23020202|line_
 		<category domain="clients-category" nicename="color"><![CDATA[Color]]></category>
 		<wp:postmeta>
 			<wp:meta_key>_thumbnail_id</wp:meta_key>
-			<wp:meta_value><![CDATA[214]]></wp:meta_value>
+			<wp:meta_value><![CDATA[223]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_edit_last</wp:meta_key>
@@ -1972,7 +1984,7 @@ WORLD" font_container="tag:h2|font_size:20|text_align:left|color:%23020202|line_
 		<category domain="clients-category" nicename="color"><![CDATA[Color]]></category>
 		<wp:postmeta>
 			<wp:meta_key>_thumbnail_id</wp:meta_key>
-			<wp:meta_value><![CDATA[219]]></wp:meta_value>
+			<wp:meta_value><![CDATA[215]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_edit_last</wp:meta_key>
@@ -2011,7 +2023,7 @@ WORLD" font_container="tag:h2|font_size:20|text_align:left|color:%23020202|line_
 		<category domain="clients-category" nicename="color"><![CDATA[Color]]></category>
 		<wp:postmeta>
 			<wp:meta_key>_thumbnail_id</wp:meta_key>
-			<wp:meta_value><![CDATA[223]]></wp:meta_value>
+			<wp:meta_value><![CDATA[214]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_edit_last</wp:meta_key>
@@ -2050,7 +2062,7 @@ WORLD" font_container="tag:h2|font_size:20|text_align:left|color:%23020202|line_
 		<category domain="clients-category" nicename="color"><![CDATA[Color]]></category>
 		<wp:postmeta>
 			<wp:meta_key>_thumbnail_id</wp:meta_key>
-			<wp:meta_value><![CDATA[222]]></wp:meta_value>
+			<wp:meta_value><![CDATA[220]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_edit_last</wp:meta_key>
@@ -2093,7 +2105,7 @@ WORLD" font_container="tag:h2|font_size:20|text_align:left|color:%23020202|line_
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_thumbnail_id</wp:meta_key>
-			<wp:meta_value><![CDATA[214]]></wp:meta_value>
+			<wp:meta_value><![CDATA[222]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>slide_template</wp:meta_key>
@@ -2132,7 +2144,7 @@ WORLD" font_container="tag:h2|font_size:20|text_align:left|color:%23020202|line_
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_thumbnail_id</wp:meta_key>
-			<wp:meta_value><![CDATA[215]]></wp:meta_value>
+			<wp:meta_value><![CDATA[213]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>slide_template</wp:meta_key>
@@ -2167,7 +2179,7 @@ WORLD" font_container="tag:h2|font_size:20|text_align:left|color:%23020202|line_
 		<category domain="clients-category" nicename="color"><![CDATA[Color]]></category>
 		<wp:postmeta>
 			<wp:meta_key>_thumbnail_id</wp:meta_key>
-			<wp:meta_value><![CDATA[211]]></wp:meta_value>
+			<wp:meta_value><![CDATA[212]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_edit_last</wp:meta_key>
@@ -2213,7 +2225,7 @@ WORLD" font_container="tag:h2|font_size:20|text_align:left|color:%23020202|line_
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_wtr_portfolio_gallery_item</wp:meta_key>
-			<wp:meta_value><![CDATA[a:4:{i:0;a:1:{i:215;s:0:"";}i:1;a:1:{i:223;s:0:"";}i:2;a:1:{i:211;s:0:"";}i:3;a:1:{i:221;s:0:"";}}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:4:{i:0;a:1:{i:222;s:0:"";}i:1;a:1:{i:212;s:0:"";}i:2;a:1:{i:222;s:0:"";}i:3;a:1:{i:215;s:0:"";}}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -2621,7 +2633,7 @@ Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi 
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_thumbnail_id</wp:meta_key>
-			<wp:meta_value><![CDATA[215]]></wp:meta_value>
+			<wp:meta_value><![CDATA[211]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -2656,7 +2668,7 @@ Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi 
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_thumbnail_id</wp:meta_key>
-			<wp:meta_value><![CDATA[215]]></wp:meta_value>
+			<wp:meta_value><![CDATA[211]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>slide_template</wp:meta_key>
@@ -2739,7 +2751,7 @@ Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi 
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_thumbnail_id</wp:meta_key>
-			<wp:meta_value><![CDATA[220]]></wp:meta_value>
+			<wp:meta_value><![CDATA[222]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>slide_template</wp:meta_key>
@@ -2870,7 +2882,7 @@ Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi 
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_thumbnail_id</wp:meta_key>
-			<wp:meta_value><![CDATA[222]]></wp:meta_value>
+			<wp:meta_value><![CDATA[220]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>
@@ -2953,8 +2965,15 @@ Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi 
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>_thumbnail_id</wp:meta_key>
-			<wp:meta_value><![CDATA[211]]></wp:meta_value>
+			<wp:meta_value><![CDATA[212]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 </channel>
 </rss>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: enhanced (Requested method is POST)
+Database Caching 37/270 queries in 0.170 seconds using disk
+
+ Served from: themes.wonster.co @ 2015-02-02 19:46:11 by W3 Total Cache -->
