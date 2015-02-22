@@ -12,3 +12,26 @@ a {
   margin-bottom: 2px; }
 .contact-list i, .footer-social i {
   width: 20px; }
+
+.footer-features {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  border-top: 10px solid #333; }
+
+.vc_custom_1424636316985, .vc_custom_1424638048095 {
+  padding: 40px; }
+
+.vc_custom_1424636808527, .vc_custom_1424637297581 {
+  margin-bottom: 0; }
+
+.wtrShtTimeTableFitnessEntry .wtrShtTimeTableEntryRoom {
+  display: none; }
+
+.single-classes .wtrBreadcrumb {
+  display: none; }
+
+.single-trainer .wtrBreadcrumb {
+  display: none; }
+
+.page-template-default .wtrBreadcrumb {
+  display: none; }
