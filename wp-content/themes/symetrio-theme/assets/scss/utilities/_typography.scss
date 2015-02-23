@@ -5,3 +5,49 @@
 a {
 	font-size: inherit;
 }
+
+
+
+
+
+
+.hd-red,
+.hd-red p {
+	color: $brand-red;
+}
+
+
+.bg-red {
+	background-color: $brand-red;
+}
+
+
+.wtrButtonRad.red, 
+.wtrButtonStd.red {
+	color: #fff !important;
+	background-color: $brand-red;
+	&:hover {
+		color: #fff !important;
+		background-color: $brand-red-bright;
+	}
+}
+
+
+.wtrButtonTrans.red {
+	color: $brand-red !important;
+	border-color: $brand-red;
+	&:hover {
+		color: $brand-red !important;
+		border-color: $brand-red-bright;
+	}
+}
+
+
+
+
+.wtrClassesTrainerItemLink {
+	&:hover {
+		color: $brand-red;
+		text-decoration: none;
+	}
+}
