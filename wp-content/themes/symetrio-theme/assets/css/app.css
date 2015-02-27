@@ -32,6 +32,34 @@ a {
 .wtrShtGallery .wtrShtGalleryItem:hover .wtrHoveredGalleryItemElements {
   color: #fff; }
 
+.wtrLogo {
+  z-index: 10;
+  margin-top: -40px;
+  margin-left: -20px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  background-color: #000; }
+  .wtrLogo img {
+    max-height: 160px; }
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .wtrLogo {
+    margin-top: -24px; }
+    .wtrLogo img {
+      height: 90px; } }
+
+@media screen and (max-width: 767px) {
+  .wtrLogo {
+    margin-top: -24px; }
+    .wtrLogo img {
+      height: 70px; } }
+
+.wtrMenuScroll.wtrHeaderTransparent .wtrLogo, .wtrHeaderSecond.wtrHeaderFixedAnim .wtrLogo {
+  margin-top: -24px !important; }
+  .wtrMenuScroll.wtrHeaderTransparent .wtrLogo img, .wtrHeaderSecond.wtrHeaderFixedAnim .wtrLogo img {
+    max-height: 90px; }
+
 .wtrFooter address {
   margin-bottom: 8px; }
 
@@ -77,3 +105,17 @@ a {
 
 .page-template-default .wtrBreadcrumb {
   display: none; }
+
+.archive .wtrBreadcrumbPath {
+  display: none; }
+.archive .wtrContentCol {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.wtrBreadcrumbHeadline {
+  float: right; }
+
+.page-id-4842 .footer-features, .page-id-4842 .wtrFooterContainer {
+  display: none; }
+.page-id-4842 .wtrCopyright .wtrInner {
+  border-top: none; }
